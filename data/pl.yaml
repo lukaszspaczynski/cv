@@ -1,0 +1,122 @@
+lang: pl
+locale: pl
+file_suffix: PL
+
+labels:
+  experience: Doświadczenie
+  projects: Projekty hobbystyczne
+  ai: Narzędzia AI
+  summary: Profil
+  education: Wykształcenie
+  skills: Umiejętności
+  languages: Języki
+  present: obecnie
+
+person:
+  name: Łukasz Spaczyński
+  photo: ../assets/photo.jpg
+  headline: Senior Mobile Engineer · iOS, React Native
+  email: lukasz.spaczynski@gmail.com
+  phone: "+48 506 180 356"
+  location: Katowice
+  availability: zdalnie (CET) / hybrydowo · otwarty na zespoły EU/UK
+  links:
+    - label: linkedin.com/in/lukaszspaczynski
+      url: https://www.linkedin.com/in/lukaszspaczynski/
+
+summary: >-
+  Inżynier oprogramowania mobilnego z 18 latami doświadczenia, w tym 14 na iOS. Od czterech lat
+  współodpowiadam za architekturę aplikacji Preglife: dwóch natywnych aplikacji iOS dla 11 rynków
+  (ok. 140 pakietów Swift), a od 2026 roku ich następcy w React Native / Expo. Prowadzę funkcje
+  od pomysłu do wydania w sklepie, podejmuję z zespołem decyzje architektoniczne i dbam o jakość
+  przez testy, CI/CD i przeglądy kodu.
+
+skills:
+  - group: Języki
+    items: ["Swift (od 2014)", "Objective-C", "TypeScript", "Kotlin (mostki natywne)"]
+  - group: iOS
+    items: ["SwiftUI", "UIKit", "Swift Concurrency", "Combine", "Swift Package Manager i architektura modułowa", "Coordinator / MVVM", "wstrzykiwanie zależności", "Core Data", "WidgetKit", "powiadomienia push i deep linking", "StoreKit / RevenueCat"]
+  - group: Inżynieria
+    items: ["testy jednostkowe / snapshotowe / E2E (XCTest, Jest, Maestro)", "CI/CD i proces wydawniczy (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Braze, AppsFlyer, Crashlytics)"]
+  - group: Wieloplatformowość
+    items: ["React Native", "Expo", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST"]
+
+experience:
+  - role: Senior Mobile Engineer
+    company: Preglife
+    url: https://apps.apple.com/pl/app/pregnancy-tracker-preglife/id390427747
+    tagline: "Aplikacja ciążowa i dla rodziców, 11 rynków · App Store 4,9★, 29 tys. ocen · nowa aplikacja RN: 99,6% crash-free users (Crashlytics, 7 dni, 10/2026)"
+    location: Katowice
+    start: maj 2022
+    end: obecnie
+    bullets:
+      - "Od maja 2026 jako jeden z pięciu inżynierów zbudowałem nową aplikację Preglife w React Native / Expo (iOS + Android), która zastąpiła obie aplikacje natywne; dotychczasowi użytkownicy, z kontem i korzystający lokalnie bez konta, zostali zmigrowani bez utraty danych."
+      - "W nowej aplikacji odpowiadam za moduł ofert i reklam oraz współdzielenie konta, współtworzę synchronizację local-first (SQLite), logowanie, onboarding i import danych z aplikacji natywnych; zbudowałem moduły Narzędzia, Wellness i Checklista od warstwy danych po analitykę."
+      - "2022–2026: w zespole iOS liczącym 2–4 osoby współprojektowałem i utrzymywałem modułową architekturę dwóch natywnych aplikacji iOS (międzynarodowej i norweskiej) dla 11 rynków, ok. 140 pakietów Swift, świadomy kompromis: wyraźne granice modułów kosztem czasu builda; byłem autorem modułów Onboarding, Ustawienia, Oferty, Narzędzia, Wyszukiwarka, Statystyki i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgetów ekranu głównego."
+      - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie funkcji."
+      - "Odpowiadałem za integracje zewnętrzne i przepływy partnerów: Braze, AppsFlyer, reklamy natywne Kevel, subskrypcje RevenueCat, Contentful, Apollo GraphQL, partnerzy ubezpieczeniowi (If Finlandia, Tryg Dania, MitID)."
+      - "Zbudowałem i prowadziłem proces wydawniczy obu aplikacji (2–6 wydań miesięcznie): pipeline'y Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez Match, lint i formatowanie w każdym pull requeście."
+
+  - role: Experienced Software Engineer (iOS)
+    company: DAZN Group
+    location: Katowice
+    start: kwi 2020
+    end: kwi 2022
+    bullets:
+      - Rozwijałem reklamy i odtwarzacz wideo w aplikacji iOS DAZN (transmisje sportowe na żywo), w zespole Scrum obejmującym iOS, Android i web.
+      - Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) i pracowałem z QA nad jakością wydań.
+
+  - role: Senior Software Developer
+    company: EUVIC
+    location: Gliwice
+    start: sty 2014
+    end: kwi 2020
+    bullets:
+      - "Payr (norweski fintech): zbudowałem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
+      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2) i SUBWAY Loss Prevention (monitoring połączony z transakcjami na żywo), a od podstaw zbudowałem UPTIVO Trainer (aplikacja fitness z urządzeniami peryferyjnymi)."
+
+  - role: iOS Developer
+    company: Grupa SPOT · KiooiK
+    location: Gliwice / Wrocław
+    start: cze 2012
+    end: gru 2013
+    bullets:
+      - "Zbudowałem od podstaw aplikację mHOSP na iPada dla branży med-tech, aplikację z przepisami Dr. Oetker Rezeptideen i grę pamięciową na iPada w Objective-C i Cocos2d."
+
+  - role: Programista PHP
+    company: eSKY · E NET PRODUCTION · RSI internet
+    location: Katowice / Rybnik
+    start: lip 2008
+    end: cze 2012
+    bullets:
+      - Rozwijałem backend wyszukiwarki lotów, moduły platformy e-commerce i oprogramowanie intranetowe (PHP 5); integracje web services, wdrożenia produkcyjne, praca w Scrumie.
+
+ai:
+  - "Codziennie pracuję z agentami kodującymi (Claude Code, Codex) w produkcyjnych aplikacjach iOS i React Native: implementacja, testy, refaktoryzacje, przeglądy PR."
+  - "Buduję kontekst dla agentów: współautor instrukcji repozytoryjnych (CLAUDE.md / AGENTS.md), autor skilli projektowych (graf wiedzy o kodzie Graphify dla ~140 pakietów, testy snapshotowe, analityka) i prywatnych (uwagi Copilota w PR, analiza crash logów, PR → Slack)."
+  - "Spinam narzędzia agentów z procesem zespołu: serwery MCP (Jira / Confluence, LSP, Figma), hooki i komendy; projekty hobbystyczne prowadzę w całości z agentem, z automatyczną pętlą weryfikacji (build → testy → render)."
+
+projects:
+  - name: Sterownik ogrzewania podłogowego
+    role: elektronika
+    description: "Własny sterownik na module ESP-01S (ESP8266) z oprogramowaniem w ESPHome i automatyką w Node-RED."
+  - name: Szklarnia ogrodowa
+    role: projekt i konstrukcja
+    description: "Parametryczny model 3D w FreeCAD generowany z Pythona, z listą cięć, optymalizacją rozkroju, rysunkami warsztatowymi i symulacją nasłonecznienia."
+
+education:
+  - degree: Inżynier (B.Eng.)
+    field: Sieci komputerowe i telekomunikacja
+    school: Instytut Informatyki i Telekomunikacji w Kielcach
+    start: "2004"
+    end: "2008"
+
+languages:
+  - name: polski
+    level: ojczysty
+  - name: angielski
+    level: B2, język pracy w Preglife
+
+consent: >-
+  Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym dokumencie
+  dla potrzeb procesu rekrutacji, zgodnie z RODO (Rozporządzenie (UE) 2016/679).

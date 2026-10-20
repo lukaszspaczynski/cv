@@ -1,0 +1,119 @@
+lang: en
+locale: en
+file_suffix: EN
+
+labels:
+  experience: Experience
+  projects: Hobby projects
+  ai: AI tooling
+  summary: Profile
+  education: Education
+  skills: Skills
+  languages: Languages
+  present: present
+
+person:
+  name: Łukasz Spaczyński
+  headline: Senior Mobile Engineer · iOS, React Native
+  email: lukasz.spaczynski@gmail.com
+  phone: "+48 506 180 356"
+  location: Katowice, Poland
+  availability: remote (CET) / hybrid · open to EU/UK teams
+  links:
+    - label: linkedin.com/in/lukaszspaczynski
+      url: https://www.linkedin.com/in/lukaszspaczynski/
+
+summary: >-
+  Mobile engineer with 18 years in software and 14 years on iOS. For the last four years I have
+  co-owned the architecture of Preglife's apps: two native iOS applications serving 11 markets
+  (~140 Swift packages), and since 2026 their React Native / Expo successor. I take features from
+  idea to store release, make architecture decisions together with the team and keep quality high
+  through tests, CI/CD and code review.
+
+skills:
+  - group: Languages
+    items: ["Swift (since 2014)", "Objective-C", "TypeScript", "Kotlin (native bridges)"]
+  - group: iOS
+    items: ["SwiftUI", "UIKit", "Swift Concurrency", "Combine", "Swift Package Manager & modular architecture", "Coordinator / MVVM", "dependency injection", "Core Data", "WidgetKit", "push notifications & deep linking", "StoreKit / RevenueCat"]
+  - group: Engineering
+    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (Fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Braze, AppsFlyer, Crashlytics)"]
+  - group: Cross-platform
+    items: ["React Native", "Expo", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST"]
+
+experience:
+  - role: Senior Mobile Engineer
+    company: Preglife
+    url: https://apps.apple.com/app/id390427747
+    tagline: "Pregnancy and parenting app, 11 markets · App Store 4.9★, 29k ratings · new RN app: 99.6% crash-free users (Crashlytics, 7 days, Oct 2026)"
+    location: Katowice, Poland
+    start: May 2022
+    end: present
+    bullets:
+      - "Since May 2026, as one of five engineers, built Preglife's new React Native / Expo app (iOS + Android), which has replaced both native apps; existing users, both account-based and local-only, were migrated without data loss."
+      - "In the new app, own the offers and ads module and account sharing; co-own local-first SQLite sync, authentication, onboarding and the import of data from the native apps; built the Tools, Wellness and Checklist modules from the data layer through to analytics."
+      - "2022–2026: in an iOS team of 2–4 engineers, co-designed and maintained the modular architecture of two native iOS apps (international and Norwegian) for 11 markets, ~140 Swift packages, a deliberate trade-off: clear module boundaries at the cost of build time; authored the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
+      - "Designed and implemented the app's theming system: colours, typography and spacing defined in one place, so periodic visual refreshes need no changes to feature code."
+      - "Owned third-party integrations and partner flows: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurance partners (If Finland, Tryg Denmark, MitID)."
+      - "Built and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, code signing with Match, lint and format checks on every pull request."
+
+  - role: Experienced Software Engineer (iOS)
+    company: DAZN Group
+    location: Katowice, Poland
+    start: Apr 2020
+    end: Apr 2022
+    bullets:
+      - Worked on ads and video playback in the DAZN iOS app (live sports streaming), in a Scrum team spanning iOS, Android and web.
+      - Wrote unit, snapshot, integration and Gherkin acceptance tests; worked closely with QA on release quality.
+
+  - role: Senior Software Developer
+    company: EUVIC
+    location: Gliwice, Poland
+    start: Jan 2014
+    end: Apr 2020
+    bullets:
+      - "Payr (Norwegian fintech startup): built from scratch a bill management and payment app, integrated with payment services and identity providers."
+      - "Developed Bosch Drivelog Connect (car data over Bluetooth / OBD2) and SUBWAY Loss Prevention (live surveillance combined with transactions), and built UPTIVO Trainer from scratch (fitness app syncing connected peripherals)."
+
+  - role: iOS Developer
+    company: Grupa SPOT · KiooiK
+    location: Gliwice / Wrocław, Poland
+    start: Jun 2012
+    end: Dec 2013
+    bullets:
+      - "Built from scratch the mHOSP iPad app for the med-tech industry, the Dr. Oetker Rezeptideen recipe app and an iPad memory game in Objective-C and Cocos2d."
+
+  - role: PHP Developer
+    company: eSKY · E NET PRODUCTION · RSI internet
+    location: Katowice / Rybnik, Poland
+    start: Jul 2008
+    end: Jun 2012
+    bullets:
+      - Built the flight-search backend, e-commerce platform modules and intranet software (PHP 5); web-service integrations, production deployments, Scrum.
+
+ai:
+  - "Work daily with coding agents (Claude Code, Codex) on production iOS and React Native apps: implementation, tests, refactoring, PR reviews."
+  - "Build context for agents: co-author of repository instructions (CLAUDE.md / AGENTS.md), author of project skills (Graphify code knowledge graph for ~140 packages, snapshot tests, analytics) and personal ones (Copilot PR comments, crash-log analysis, PR-to-Slack)."
+  - "Wire agent tooling into the team workflow: MCP servers (Jira / Confluence, LSP, Figma), hooks and commands; run hobby projects entirely with an agent, with an automated verification loop (build → tests → render)."
+
+projects:
+  - name: Underfloor heating controller
+    role: electronics
+    description: "Self-designed controller on an ESP-01S (ESP8266) module with ESPHome firmware and Node-RED automation."
+  - name: Garden greenhouse
+    role: design and build
+    description: "Parametric 3D model in FreeCAD generated from Python, with cut list, cutting-layout optimisation, workshop drawings and a sunlight simulation."
+
+education:
+  - degree: Bachelor of Engineering (B.Eng.)
+    field: Computer Systems Networking and Telecommunications
+    school: Institute of Information Technology and Telecommunications in Kielce
+    start: "2004"
+    end: "2008"
+
+languages:
+  - name: Polish
+    level: native
+  - name: English
+    level: B2, working language at Preglife
+
+consent: ""

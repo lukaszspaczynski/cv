@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<title>{{ person.name }} – CV</title>
+<style>{{ css | safe }}</style>
+</head>
+<body>
+<header class="head">
+  {% if person.get("photo") %}<img class="head__photo" src="{{ person.photo }}" alt="">{% endif %}
+  <div class="head__id">
+    <h1>{{ person.name }}</h1>
+    <p class="headline">{{ person.headline }}</p>
+    <p class="head__where">{{ person.location }}{% if person.get("availability") %} · {{ person.availability }}{% endif %}</p>
+  </div>
+  <ul class="head__contact">
+    <li><a href="mailto:{{ person.email }}">{{ person.email }}</a></li>
+    <li>{{ person.phone }}</li>
+    {% for l in person.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}
+  </ul>
+</header>
+
+<section class="profile">
+  <h2>{{ labels.summary }}</h2>
+  <p class="summary">{{ summary }}</p>
+</section>
+
+<section class="skills">
+  <h2>{{ labels.skills }}</h2>
+  {% for s in skills %}
+  <p class="skill"><span class="skill__group">{{ s.group }}</span>{{ s["items"] | join(" · ") }}</p>
+  {% endfor %}
+</section>
+
+<section class="experience">
+  <h2>{{ labels.experience }}</h2>
+  {% for job in experience %}
+  <article class="job">
+    <div class="job__head">
+      <div>
+        <span class="job__role">{{ job.role }}</span>
+        <span class="job__company">· {% if job.get("url") %}<a href="{{ job.url }}">{{ job.company }}</a>{% else %}{{ job.company }}{% endif %}</span>
+      </div>
+      <div class="job__meta">{{ job.start }} – {{ job.end }} · {{ job.location }}</div>
+      {% if job.get("tagline") %}<div class="job__tagline">{{ job.tagline }}</div>{% endif %}
+    </div>
+    <ul class="bullets">
+      {% for b in job.bullets %}<li>{{ b }}</li>{% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+</section>
+
+{% if ai %}
+<section class="ai">
+  <h2>{{ labels.ai }}</h2>
+  <ul class="bullets">
+    {% for b in ai %}<li>{{ b }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if projects %}
+<section>
+  <h2>{{ labels.projects }}</h2>
+  {% for p in projects %}
+  <article class="project">
+    <div class="job__head">
+      <div>
+        <span class="job__role">{% if p.get("url") %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
+        <span class="job__company">· {{ p.role }}</span>
+      </div>
+    </div>
+    <p class="project__desc">{{ p.description }}</p>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
+<div class="row2">
+  <section>
+    <h2>{{ labels.education }}</h2>
+    {% for e in education %}
+    <p class="edu"><strong>{{ e.degree }}</strong>, {{ e.field }}<br>{{ e.school }} · {{ e.start }}–{{ e.end }}</p>
+    {% endfor %}
+  </section>
+  <section>
+    <h2>{{ labels.languages }}</h2>
+    <ul class="langs">
+      {% for l in languages %}<li><span>{{ l.name }}</span><span class="lvl">{{ l.level }}</span></li>{% endfor %}
+    </ul>
+  </section>
+</div>
+
+{% if consent %}<footer class="consent">{{ consent }}</footer>{% endif %}
+</body>
+</html>
