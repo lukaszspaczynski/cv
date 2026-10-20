@@ -68,7 +68,10 @@ h2 {
 .skill__group { font-weight: 700; }
 
 /* ---------- experience ---------- */
-.job, .project { margin-bottom: 3.6mm; break-inside: avoid; }
+.job, .project { margin-bottom: 3.6mm; }
+.project { break-inside: avoid; }
+.job__head { break-after: avoid; break-inside: avoid; }
+.bullets li { break-inside: avoid; }
 .job__head { margin-bottom: 1mm; }
 .job__role { font-weight: 700; font-size: 10.6pt; }
 .job__company { font-weight: 500; color: var(--accent); }

@@ -18,17 +18,17 @@ person:
   email: lukasz.spaczynski@gmail.com
   phone: "+48 506 180 356"
   location: Katowice, Poland
-  availability: remote (CET) / hybrid · open to EU/UK teams
+  availability: remote (CET) / hybrid · open to EU teams
   links:
     - label: linkedin.com/in/lukaszspaczynski
       url: https://www.linkedin.com/in/lukaszspaczynski/
 
 summary: >-
-  Mobile engineer with 18 years in software and 14 years on iOS. For the last four years I have
-  co-owned the architecture of Preglife's apps: two native iOS applications serving 11 markets
-  (~140 Swift packages), and since 2026 their React Native / Expo successor. I take features from
-  idea to store release, make architecture decisions together with the team and keep quality high
-  through tests, CI/CD and code review.
+  Senior mobile developer with 18 years of experience, 14 of them on iOS. For the last four years
+  I have co-owned the architecture of Preglife's apps: two native iOS applications serving 11 markets
+  (~70 Swift packages), and since 2026 their React Native / Expo successor. I take features from idea
+  to release on the App Store and Google Play, make architecture decisions together with the team
+  and keep quality high through tests, CI/CD and code review.
 
 skills:
   - group: Languages
@@ -44,19 +44,21 @@ experience:
   - role: Senior Mobile Engineer
     company: Preglife
     url: https://apps.apple.com/app/id390427747
-    tagline: "Pregnancy and parenting app, 11 markets · App Store 4.9★, 29k ratings · new RN app: 99.6% crash-free users (Crashlytics, 7 days, Oct 2026)"
+    tagline: "App for expecting and new parents, 11 markets · App Store 4.9★, 29k ratings"
     location: Katowice, Poland
     start: May 2022
     end: present
     bullets:
-      - "Since May 2026, as one of five engineers, built Preglife's new React Native / Expo app (iOS + Android), which has replaced both native apps; existing users, both account-based and local-only, were migrated without data loss."
-      - "In the new app, own the offers and ads module and account sharing; co-own local-first SQLite sync, authentication, onboarding and the import of data from the native apps; built the Tools, Wellness and Checklist modules from the data layer through to analytics."
-      - "2022–2026: in an iOS team of 2–4 engineers, co-designed and maintained the modular architecture of two native iOS apps (international and Norwegian) for 11 markets, ~140 Swift packages, a deliberate trade-off: clear module boundaries at the cost of build time; authored the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
+      - "Since May 2026, as one of five engineers, built Preglife's new React Native / Expo app (iOS + Android), released on 14 October 2026 in place of both native apps; existing users, both account-based and local-only, were migrated without data loss."
+      - "In the new app, own the offers and ads module, account sharing and the import of data from the native apps; co-own local-first SQLite sync, authentication and onboarding; built the Tools, Wellness and Checklist modules from the data layer through to analytics."
+      - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge that defers SDK initialisation until JS has configured it (no lost session-start events) and routes in-app message actions to the app, a home-screen widget module (iOS and Android Glance) and a launch-argument backend switch for internal builds; push deep links survive a cold start."
+      - "2022–2026: in an iOS team of 2–4 engineers, co-designed and maintained the modular architecture of two native iOS apps (international and Norwegian) for 11 markets, ~70 Swift packages on a shared codebase; a deliberate trade-off: clear module boundaries at the cost of build time."
+      - "Authored the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
       - "Designed and implemented the app's theming system: colours, typography and spacing defined in one place, so periodic visual refreshes need no changes to feature code."
-      - "Owned third-party integrations and partner flows: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurance partners (If Finland, Tryg Denmark, MitID)."
+      - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurers If Finland and Tryg Denmark, MitID identity verification."
       - "Built and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, code signing with Match, lint and format checks on every pull request."
 
-  - role: Experienced Software Engineer (iOS)
+  - role: Senior Software Engineer (iOS)
     company: DAZN Group
     location: Katowice, Poland
     start: Apr 2020
@@ -91,17 +93,12 @@ experience:
       - Built the flight-search backend, e-commerce platform modules and intranet software (PHP 5); web-service integrations, production deployments, Scrum.
 
 ai:
-  - "Work daily with coding agents (Claude Code, Codex) on production iOS and React Native apps: implementation, tests, refactoring, PR reviews."
-  - "Build context for agents: co-author of repository instructions (CLAUDE.md / AGENTS.md), author of project skills (Graphify code knowledge graph for ~140 packages, snapshot tests, analytics) and personal ones (Copilot PR comments, crash-log analysis, PR-to-Slack)."
-  - "Wire agent tooling into the team workflow: MCP servers (Jira / Confluence, LSP, Figma), hooks and commands; run hobby projects entirely with an agent, with an automated verification loop (build → tests → render)."
+  - "Work daily with coding agents (Claude Code) on production iOS and React Native code and build their context for the team: co-author of repository instructions (CLAUDE.md / AGENTS.md), author of project skills (code knowledge graph for ~70 packages, snapshot tests, analytics conventions) and MCP integrations with Jira, Confluence and Figma, so the agent works to the same architecture rules and conventions as the team."
 
 projects:
   - name: Underfloor heating controller
-    role: electronics
+    role: electronics, hobby project
     description: "Self-designed controller on an ESP-01S (ESP8266) module with ESPHome firmware and Node-RED automation."
-  - name: Garden greenhouse
-    role: design and build
-    description: "Parametric 3D model in FreeCAD generated from Python, with cut list, cutting-layout optimisation, workshop drawings and a sunlight simulation."
 
 education:
   - degree: Bachelor of Engineering (B.Eng.)

@@ -74,9 +74,11 @@ def set_metadata(pdf_path: Path, data: dict) -> None:
     name instead of the rendering toolchain."""
     name = data["person"]["name"]
     headline = data["person"]["headline"]
+    # Keywords always come from the English data so ATS parsers get English terms.
+    en = yaml.safe_load((DATA / "en.yaml").read_text(encoding="utf-8"))
     keywords = ", ".join(
         re.sub(r"\s*\([^)]*\)", "", item).strip()
-        for group in data["skills"] for item in group["items"]
+        for group in en["skills"] for item in group["items"]
     )
     reader = PdfReader(str(pdf_path))
     writer = PdfWriter(clone_from=reader)
