@@ -59,7 +59,7 @@ experience:
           - "Designed and implemented the app's theming system: colours, typography and spacing defined in one place, so periodic visual refreshes need no changes to feature code."
           - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel (native ads), RevenueCat, Contentful, insurers If (Finland) and Tryg (Denmark), and MitID (identity verification)."
           - "Set up and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, code signing with fastlane match, lint and tests on every PR."
-          - "Kept improving the team's tooling: CI pipelines, a Sourcery generator that scaffolds a new feature module, and trials of new tools that speed up day-to-day work."
+          - "Led code review for the iOS team and kept improving its tooling: CI pipelines, a Sourcery generator that scaffolds a new feature module, and trials of new tools that speed up day-to-day work."
       - title: Preglife · React Native / Expo
         start: May 2026
         end: present
@@ -67,7 +67,7 @@ experience:
         bullets:
           - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance)."
           - "Own the offers and ads module and account sharing (one account used by both parents); built the Tools, Wellness and Checklist modules end to end, from the data layer to analytics."
-          - "Designed and built the migration of native-app data into the on-device SQLite database (local-first) for signed-in and guest users, run automatically on a regular app update; rolling out since October 2026."
+          - "Designed and built the migration of native-app data into the on-device SQLite database (local-first) for signed-in and guest users, run automatically on a regular app update; over 100k users migrated since the October 2026 launch."
           - "Built tooling that automates the team's work: AASA and assetlinks files generated from the app config, a shared encrypted .env (sops, age), and Maestro E2E tests (flows written with an AI coding agent against lint-enforced rules) that run in GitHub Actions with a screen recording and an analytics-event report."
 
   - role: Flutter Developer (side contract)
@@ -97,7 +97,7 @@ experience:
     start: Jan 2014
     end: Apr 2020
     bullets:
-      - "Payr (Norwegian fintech, English-speaking team): built a bill management and payment app from scratch, integrated with payment services and identity providers."
+      - "Payr (Norwegian fintech, English-speaking team, 2018–2020): built a bill management and payment app from scratch, integrated with payment services and identity providers."
       - "Developed Bosch Drivelog Connect (car data over Bluetooth / OBD2), SUBWAY Loss Prevention (camera footage matched to live transactions) and UPTIVO Trainer (fitness app working with external devices)."
 
   - role: iOS Developer
@@ -107,6 +107,14 @@ experience:
     end: Dec 2013
     bullets:
       - "Wrote the mHOSP iPad app for the med-tech industry, the Dr. Oetker Rezeptideen recipe app and an iPad memory game (Cocos2d), all in Objective-C."
+
+  - role: PHP Developer
+    company: eSKY, E NET PRODUCTION, RSI internet
+    location: Katowice / Rybnik, Poland
+    start: Jul 2008
+    end: Jun 2012
+    compact: true
+    bullets: []
 
 ai: []
 
@@ -126,6 +134,6 @@ languages:
   - name: Polish
     level: native
   - name: English
-    level: B2, working language since 2020
+    level: B2, working language since 2018
 
 consent: ""

@@ -60,7 +60,7 @@ experience:
           - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
           - "Prowadziłem integracje zewnętrzne i partnerskie: Braze, AppsFlyer, Kevel (reklamy natywne), RevenueCat, Contentful, ubezpieczyciele If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
           - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie): Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez fastlane match, lint i testy w każdym PR."
-          - "Rozwijałem narzędzia zespołu: pipeline'y CI, generator Sourcery tworzący szkielet nowego modułu funkcji oraz testy nowych narzędzi przyspieszających codzienną pracę."
+          - "Prowadziłem code review w zespole iOS i rozwijałem jego narzędzia: pipeline'y CI, generator Sourcery tworzący szkielet nowego modułu funkcji oraz testy nowych narzędzi przyspieszających codzienną pracę."
       - title: Preglife · React Native / Expo
         start: maj 2026
         end: obecnie
@@ -68,8 +68,8 @@ experience:
         bullets:
           - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance)."
           - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta (jedno konto dla obojga rodziców); zbudowałem też moduły Tools, Wellness i Checklist, od warstwy danych po analitykę."
-          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników z kontem i bez, uruchamianą automatycznie przy zwykłej aktualizacji; wdrażana od października 2026."
-          - "Zbudowałem narzędzia automatyzujące pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (scenariusze pisane z agentem AI według reguł z lintera), uruchamiane w GitHub Actions z nagraniem ekranu i raportem zdarzeń analitycznych."
+          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników z kontem i bez, uruchamianą automatycznie przy zwykłej aktualizacji; od premiery w październiku 2026 zmigrowało ponad 100 tys. użytkowników."
+          - "Zbudowałem narzędzia automatyzujące pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (scenariusze pisane z agentem AI według reguł z lintera), uruchamiane w GitHub Actions z nagraniem ekranu i raportem analityki."
 
   - role: Flutter Developer (zlecenie dodatkowe)
     company: Coolomat
@@ -78,7 +78,7 @@ experience:
     start: sty. 2022
     end: mar. 2022
     bullets:
-      - "Postawiłem aplikację Pick-Up dla automatów paczkowych Coolomat (Flutter; główny programista w dwuosobowym zespole): architektura (RxDart, GetX), API rezerwacji, zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS, push Firebase, tłumaczenia EN/SL."
+      - "Postawiłem aplikację Pick-Up dla automatów paczkowych Coolomat (Flutter; główny programista w dwuosobowym zespole): architektura, API rezerwacji, zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS, push Firebase."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
@@ -87,7 +87,7 @@ experience:
     start: kwi. 2020
     end: kwi. 2022
     bullets:
-      - "W zespole cross-platform (iOS, Android, web) pracującym w Scrumie odpowiadałem za obszar reklam i odtwarzania wideo w aplikacji iOS DAZN."
+      - "Odpowiadałem za reklamy i odtwarzanie wideo w iOS DAZN w zespole cross-platform iOS/Android/web."
       - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) oraz wspierałem QA w automatyzacji testów; utrzymywałem buildy w CI (Jenkins)."
       - "Brałem udział w rekrutacji inżynierów iOS: ocena zadań kandydatów i prowadzenie rozmów technicznych."
 
@@ -98,7 +98,7 @@ experience:
     start: sty. 2014
     end: kwi. 2020
     bullets:
-      - "Payr (norweski fintech, zespół anglojęzyczny): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
+      - "Payr (norweski fintech, zespół anglojęzyczny, 2018–2020): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
       - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2), SUBWAY Loss Prevention (obraz z kamer powiązany z transakcjami) i UPTIVO Trainer (fitness z urządzeniami zewnętrznymi)."
 
   - role: iOS Developer
@@ -108,6 +108,14 @@ experience:
     end: gru. 2013
     bullets:
       - "Napisałem aplikację mHOSP na iPada dla branży med-tech, aplikację z przepisami Dr. Oetker Rezeptideen i grę typu memory na iPada (Cocos2d), wszystko w Objective-C."
+
+  - role: PHP Developer
+    company: eSKY, E NET PRODUCTION, RSI internet
+    location: Katowice / Rybnik
+    start: lip. 2008
+    end: cze. 2012
+    compact: true
+    bullets: []
 
 ai: []
 
@@ -127,7 +135,7 @@ languages:
   - name: polski
     level: ojczysty
   - name: angielski
-    level: B2, język pracy od 2020
+    level: B2, język pracy od 2018
 
 consent: >-
   Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesu rekrutacji zgodnie z RODO, tj. rozporządzeniem (UE) 2016/679.

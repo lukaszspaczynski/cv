@@ -69,5 +69,5 @@ słowa kluczowe (umiejętności bez nawiasów), a pola Creator i Producer dostaj
 ## Edycja treści
 
 Cała treść jest w plikach YAML. Szablon nie zawiera tekstu – zmiana treści nie wymaga ruszania HTML/CSS.
-Pole `url` w projektach i wpisach doświadczenia jest opcjonalne (nazwa firmy staje się linkiem). Sekcje są renderowane w kolejności zdefiniowanej w szablonie.
+Pole `url` w projektach i wpisach doświadczenia jest opcjonalne (nazwa firmy staje się linkiem). Wpis z `compact: true` renderuje rolę, firmę i daty w jednym wierszu, bez punktów (tak jest opisany okres PHP 2008–2012). Sekcje są renderowane w kolejności zdefiniowanej w szablonie.
 Wpis doświadczenia może zamiast `bullets` mieć listę `phases` (podbloki z własnym `title`, `start`, `end`, opcjonalnym `note` i `bullets`) – tak jest opisany Preglife: osobno okres React Native i osobno natywny iOS, pod jednym nagłówkiem pracodawcy. Podblok może dzielić się między strony, ale jego nagłówek z notą trzyma się razem z pierwszym punktem, więc na stronie nie zostaje osierocony tytuł fazy.
