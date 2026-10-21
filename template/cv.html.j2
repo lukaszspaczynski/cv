@@ -28,7 +28,7 @@
 <section class="skills">
   <h2>{{ labels.skills }}</h2>
   {% for s in skills %}
-  <p class="skill"><span class="skill__group">{{ s.group }}</span>{{ s["items"] | join("\u00a0· ") }}</p>
+  <p class="skill"><span class="skill__group">{{ s.group }}</span><span class="skill__items">{{ s["items"] | join("\u00a0· ") }}</span></p>
   {% endfor %}
 </section>
 

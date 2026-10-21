@@ -29,7 +29,7 @@ person:
 summary: >-
   Senior iOS Engineer z 14-letnim doświadczeniem na platformach Apple (Objective-C, Swift od 2014,
   SwiftUI); od maja 2026 także React Native / Expo, na produkcji od października 2026. Mocne strony:
-  modułowa architektura, integracje natywne i proces wydań. W Preglife współprojektowałem modułową
+  architektura aplikacji, integracje natywne i proces wydań. W Preglife współprojektowałem modułową
   architekturę dwóch natywnych aplikacji, a teraz współtworzę ich następcę w React Native, odpowiadając
   za migrację danych z aplikacji natywnych (ponad 100 tys. użytkowników) i warstwę natywną w Swifcie i Kotlinie.
 
@@ -39,7 +39,7 @@ skills:
   - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "Android (Kotlin, widgety Glance)"]
   - group: Proces i jakość
-    items: ["testy jednostkowe / snapshotowe / E2E", "CI/CD i wydania (fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
+    items: ["testy jednostkowe / snapshotowe / E2E (XCTest, Jest, Maestro)", "CI/CD (fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)"]
   - group: Narzędzia AI
     items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -63,9 +63,9 @@ experience:
             url: https://play.google.com/store/apps/details?id=com.gravid.gravid
         bullets:
           - "Zaprojektowałem i zrealizowałem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników zalogowanych i gości: ponad 100 tys. użytkowników zmigrowanych automatycznie przy zwykłej aktualizacji od premiery w październiku 2026."
-          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Androida (Glance)."
+          - "Odpowiadam za warstwę natywną aplikacji RN: moduły Expo w Kotlinie i Swifcie, m.in. bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Androida (Glance)."
           - "Odpowiadam za moduł ofert i reklam oraz funkcję współdzielenia konta (jedno konto dla obojga rodziców); zbudowałem też trzy moduły funkcjonalne w TypeScripcie: ekrany React Native, hooki TanStack Query, warstwa danych SQLite i zdarzenia analityczne."
-          - "Uruchomiłem testy E2E w Maestro w GitHub Actions: nagranie ekranu i raport zdarzeń analitycznych z każdego przebiegu; scenariusze pisane z agentem AI według reguł wymuszanych linterem."
+          - "Uruchomiłem testy E2E (Maestro) w GitHub Actions: nagranie ekranu i raport zdarzeń analitycznych z każdego przebiegu; zdefiniowałem reguły wymuszane linterem, dzięki którym scenariusze pisze agent AI."
           - "Zautomatyzowałem generowanie AASA/assetlinks z konfiguracji; dodałem zaszyfrowany .env (sops, age)."
       - title: Natywny iOS
         start: maj 2022
@@ -74,7 +74,7 @@ experience:
         bullets:
           - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem od zera, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka oraz obsługę deep linków."
           - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie: fastlane i GitHub Actions do TestFlight i App Store, fastlane match, lint i testy w każdym PR); prowadziłem code review w zespole iOS i rozwijałem narzędzia zespołu, m.in. generator Sourcery tworzący szkielet nowego modułu."
-          - "Stworzyłem bibliotekę komponentów SwiftUI (osobne repo: 34 komponenty server-driven UI, aplikacja-katalog Playbook, testy snapshotowe), która renderuje ekrany opisane w GraphQL w aplikacjach UIKit."
+          - "Stworzyłem bibliotekę komponentów SwiftUI (osobne repo: 34 komponenty server-driven UI, katalog Playbook, testy snapshotowe), która renderuje ekrany opisane w GraphQL w aplikacjach UIKit."
           - "Zbudowałem moduły Onboarding, Offers i Sleep Sounds (silnik audio, timery odtwarzania w tle), widgety ekranu głównego (WidgetKit) oraz system motywów: kolory, typografia i odstępy zdefiniowane w jednym miejscu, dzięki czemu odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
           - "Odpowiadałem za integracje zewnętrzne i partnerskie: Braze, AppsFlyer, Kevel (reklamy natywne), RevenueCat, Contentful, ubezpieczyciele If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
 
@@ -86,9 +86,9 @@ experience:
     start: kwi. 2020
     end: kwi. 2022
     bullets:
-      - "Odpowiadałem za reklamy i odtwarzanie wideo w aplikacji iOS DAZN: AVPlayer, HLS live i VOD, DRM FairPlay, SSAI (Google DAI), Chromecast i AirPlay; zespół cross-platform (iOS, Android, web) w Scrumie."
+      - "Odpowiadałem za reklamy i odtwarzanie wideo w aplikacji iOS DAZN: AVPlayer, HLS live i VOD, DRM FairPlay, reklamy server-side (Google DAI), Chromecast, AirPlay; zespół cross-platform iOS/Android/web."
       - "Wdrożyłem Key Moments dla transmisji na żywo: zdarzenia meczu (gole, faule) odbierane przez socket i pokazywane jako nakładka na odtwarzaczu, z przewinięciem do danego momentu jednym dotknięciem."
-      - "Zbudowałem zestawy testów odtwarzania i reklam (jednostkowe, snapshotowe, integracyjne, akceptacyjne w Gherkinie) i utrzymywałem pipeline CI w Jenkinsie."
+      - "Zbudowałem zestawy testów odtwarzania i reklam (jednostkowe, snapshotowe, integracyjne, Gherkin) i utrzymywałem pipeline CI w Jenkinsie."
       - "Uczestniczyłem w rekrutacji iOS: oceniałem zadania rekrutacyjne i prowadziłem rozmowy techniczne."
 
   - role: Flutter Developer (zlecenie dodatkowe)
@@ -98,7 +98,7 @@ experience:
     start: sty. 2022
     end: mar. 2022
     bullets:
-      - "Napisałem od zera aplikację Pick-Up dla chłodniczych skrytek paczkowych (Flutter, iOS i Android; lead developer w 2-osobowym zespole): API rezerwacji i zamówień QR, otwieranie skrytek z weryfikacją GPS."
+      - "Napisałem od zera aplikację Pick-Up dla chłodniczych skrytek paczkowych (Flutter, iOS i Android; lead developer w dwuosobowym zespole): API rezerwacji, zamówienia QR, otwieranie skrytek po GPS."
 
   - role: Senior Software Developer (iOS)
     company: EUVIC
@@ -131,7 +131,7 @@ ai: []
 
 projects:
   - name: Sterownik ogrzewania podłogowego
-    role: elektronika
+    role: automatyka domowa
     description: "Własny sterownik na module ESP-01S (ESP8266) z oprogramowaniem w ESPHome i automatyką w Node-RED."
 
 education:
@@ -148,4 +148,4 @@ languages:
     level: B2, język pracy od 2018
 
 consent: >-
-  Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesu rekrutacji zgodnie z RODO, tj. rozporządzeniem (UE) 2016/679.
+  Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w CV na potrzeby rekrutacji zgodnie z RODO, rozp. (UE) 2016/679.

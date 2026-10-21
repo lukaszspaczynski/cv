@@ -16,6 +16,8 @@ import yaml
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from playwright.sync_api import sync_playwright
 from pypdf import PdfReader, PdfWriter
+from markupsafe import Markup, escape
+from markupsafe import Markup, escape
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -26,8 +28,36 @@ OUT = ROOT / "out"
 NAME_SLUG = "Lukasz-Spaczynski-CV"
 
 
+NBSP = "\u00a0"
+SKIP_KEYS = {"url", "photo", "email", "phone", "lang", "locale", "file_suffix", "label", "start", "end"}
+HYPHENATED = re.compile(r"\b\w+(?:-\w+)+\b")
+PL_ONE_LETTER = re.compile(r"(?<![\w-])([aiouwzAIOUWZ]) ")
+
+
+def typeset(text: str, lang: str) -> Markup:
+    """Escape, then apply print typography: no line break after Polish one-letter
+    words, inside hyphenated terms, or around '&' and '/'. Returns safe markup."""
+    s = str(escape(text))
+    if lang == "pl":
+        s = PL_ONE_LETTER.sub(lambda m: m.group(1) + NBSP, s)
+    s = s.replace(" &amp; ", NBSP + "&amp;" + NBSP).replace(" / ", NBSP + "/" + NBSP)
+    s = HYPHENATED.sub(lambda m: f'<span class="nowrap">{m.group(0)}</span>', s)
+    return Markup(s)
+
+
+def typeset_tree(node, lang: str):
+    if isinstance(node, dict):
+        return {k: (v if k in SKIP_KEYS else typeset_tree(v, lang)) for k, v in node.items()}
+    if isinstance(node, list):
+        return [typeset_tree(v, lang) for v in node]
+    if isinstance(node, str):
+        return typeset(node, lang)
+    return node
+
+
 def render_html(lang: str) -> Path:
-    data = yaml.safe_load((DATA / f"{lang}.yaml").read_text(encoding="utf-8"))
+    raw = yaml.safe_load((DATA / f"{lang}.yaml").read_text(encoding="utf-8"))
+    data = typeset_tree(raw, lang)
     env = Environment(
         loader=FileSystemLoader(TEMPLATE),
         autoescape=True,
@@ -40,7 +70,7 @@ def render_html(lang: str) -> Path:
     BUILD.mkdir(exist_ok=True)
     out = BUILD / f"cv-{lang}.html"
     out.write_text(html, encoding="utf-8")
-    return out, data
+    return out, raw
 
 
 def html_to_pdf(html_path: Path, pdf_path: Path, footer_name: str) -> None:

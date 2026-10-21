@@ -20,6 +20,7 @@ body {
   print-color-adjust: exact;
 }
 a { color: inherit; text-decoration: none; }
+.nowrap { white-space: nowrap; }
 ul { margin: 0; padding: 0; list-style: none; }
 p { margin: 0; }
 

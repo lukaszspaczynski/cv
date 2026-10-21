@@ -28,8 +28,8 @@ person:
 summary: >-
   Senior iOS Engineer with 14 years on Apple platforms (Objective-C, Swift since its 2014 release, SwiftUI);
   building with React Native / Expo since May 2026, in production since October 2026. Core strengths:
-  modular app architecture, native integrations and release engineering. At Preglife I co-designed
-  the modular architecture of two native apps and now co-build their React Native successor, owning the
+  app architecture, native integrations and release engineering. At Preglife I co-designed the modular
+  architecture of two native apps and now help build their React Native successor, owning the
   native-to-RN data migration (100k+ users) and the native layer in Swift and Kotlin.
 
 skills:
@@ -38,7 +38,7 @@ skills:
   - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST", "native Expo modules (Swift, Kotlin)", "Android (Kotlin, Glance widgets)"]
   - group: Process & quality
-    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)", "CRM & attribution (Braze, AppsFlyer)"]
+    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)"]
   - group: AI tooling
     items: ["Claude Code", "agent rules (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -62,9 +62,9 @@ experience:
             url: https://play.google.com/store/apps/details?id=com.gravid.gravid
         bullets:
           - "Designed and built the migration of native-app data into the on-device SQLite database (local-first) for signed-in and guest users: 100k+ users migrated automatically via a regular app update since the October 2026 launch."
-          - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance)."
-          - "Own the offers-and-ads module and the account-sharing feature (one account for both parents); built three feature modules end to end in TypeScript: React Native screens, TanStack Query hooks, SQLite data layer and analytics events."
-          - "Set up Maestro E2E tests in GitHub Actions: screen recording and analytics-event report per run; flows authored with an AI coding agent, conventions enforced by lint rules."
+          - "Own the native layer of the RN app: Expo modules in Kotlin and Swift, including a Braze bridge (deferred SDK initialisation, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance)."
+          - "Own the offers-and-ads module and the account-sharing feature (one account for both parents); also built three further feature modules end to end in TypeScript: React Native screens, TanStack Query hooks, SQLite data layer and analytics events."
+          - "Set up Maestro E2E tests in GitHub Actions: screen recording and analytics-event report per run; defined lint-enforced conventions so flows can be authored with an AI coding agent."
           - "Automated AASA/assetlinks generation from the app config; added an encrypted shared .env (sops, age)."
       - title: Native iOS
         start: May 2022
@@ -130,7 +130,7 @@ ai: []
 
 projects:
   - name: Underfloor heating controller
-    role: electronics
+    role: home automation
     description: "Custom controller on an ESP-01S (ESP8266) module with ESPHome firmware and Node-RED automation."
 
 education:
