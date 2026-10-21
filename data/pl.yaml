@@ -28,10 +28,10 @@ person:
 
 summary: >-
   Senior iOS Engineer z 14-letnim doświadczeniem na platformach Apple: Objective-C, Swift od 2014,
-  SwiftUI; od maja 2026 produkcyjnie także React Native / Expo. Najmocniejszy w modułowej architekturze,
-  integracjach natywnych i procesie wydań. W Preglife współprojektowałem architekturę dwóch natywnych
-  aplikacji, a teraz współtworzę ich następcę w React Native, odpowiadając za migrację danych (ponad
-  100 tys. użytkowników od premiery w październiku 2026) i warstwę natywną w Swifcie i Kotlinie.
+  SwiftUI; od maja 2026 także React Native / Expo (na produkcji od października 2026). Najmocniejsze
+  obszary: modułowa architektura, integracje natywne i proces wydań. W Preglife współprojektowałem
+  architekturę dwóch natywnych aplikacji, a teraz współtworzę ich następcę w React Native, odpowiadając
+  za migrację danych (ponad 100 tys. zmigrowanych użytkowników) i warstwę natywną w Swifcie i Kotlinie.
 
 skills:
   - group: iOS
@@ -39,7 +39,7 @@ skills:
   - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "Android (Kotlin, widgety Glance)"]
   - group: Proces i jakość
-    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
+    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
   - group: Narzędzia AI
     items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -55,25 +55,25 @@ experience:
       - title: React Native / Expo
         start: maj 2026
         end: obecnie
-        note: "Nowa aplikacja na iOS i Android, następca obu aplikacji natywnych; zespół pięcioosobowy"
+        note: "Nowa aplikacja na iOS i Androida, następca obu aplikacji natywnych; zespół pięcioosobowy"
         links:
           - label: Google Play
             url: https://play.google.com/store/apps/details?id=com.gravid.gravid
         bullets:
-          - "Zaprojektowałem i zrealizowałem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników z kontem i bez: od premiery w październiku 2026 zmigrowano dane ponad 100 tys. użytkowników, automatycznie przy zwykłej aktualizacji."
-          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance)."
-          - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta (jedno konto dla obojga rodziców); zbudowałem też moduły Tools, Wellness i Checklist, od warstwy danych po analitykę."
-          - "Zautomatyzowałem pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (scenariusze pisane z agentem AI według reguł wymuszanych linterem), uruchamiane w GitHub Actions z nagraniem i raportem zdarzeń analitycznych."
-      - title: Natywny iOS
+          - "Zaprojektowałem i zrealizowałem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników zalogowanych i gości: ponad 100 tys. użytkowników zmigrowanych automatycznie w pierwszych tygodniach po premierze w październiku 2026, przy zwykłej aktualizacji."
+          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Androida (Glance)."
+          - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta (jedno konto dla obojga rodziców); zbudowałem też moduły Tools, Wellness i Checklist, od warstwy danych SQLite po zdarzenia analityczne."
+          - "Uruchomiłem testy E2E w Maestro w GitHub Actions (nagranie i raport zdarzeń analitycznych z każdego przebiegu; scenariusze pisane z agentem AI według reguł wymuszanych linterem); zautomatyzowałem też generowanie AASA i assetlinks z konfiguracji aplikacji oraz współdzielony zaszyfrowany .env (sops, age)."
+      - title: Natywny iOS (od paź. 2026 utrzymanie)
         start: maj 2022
         end: obecnie
-        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób; od premiery w październiku 2026 tylko utrzymanie."
+        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób"
         bullets:
           - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem od zera, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka oraz obsługę deep linków."
           - "Stworzyłem bibliotekę komponentów SwiftUI (osobne repo: 34 widgety, aplikacja-katalog Playbook, testy snapshotowe), która renderuje server-driven UI (ekrany opisane w GraphQL) w aplikacjach UIKit."
           - "Zbudowałem moduły Onboarding, Offers i Sleep Sounds (silnik audio, timery odtwarzania w tle), widgety ekranu głównego (WidgetKit) oraz system motywów: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
           - "Odpowiadałem za integracje zewnętrzne i partnerskie: Braze, AppsFlyer, Kevel (reklamy natywne), RevenueCat, Contentful, ubezpieczyciele If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
-          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie: Fastlane i GitHub Actions do TestFlight i App Store, fastlane match, lint i testy w każdym PR); prowadziłem code review w zespole iOS i rozwijałem jego narzędzia, m.in. generator Sourcery tworzący szkielet nowego modułu."
+          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie: fastlane i GitHub Actions do TestFlight i App Store, fastlane match, lint i testy w każdym PR); prowadziłem code review w zespole iOS i rozwijałem narzędzia zespołu, m.in. generator Sourcery tworzący szkielet nowego modułu."
 
   - role: Flutter Developer (zlecenie dodatkowe)
     company: Coolomat
@@ -82,29 +82,31 @@ experience:
     start: sty. 2022
     end: mar. 2022
     bullets:
-      - "Zbudowałem od zera aplikację Pick-Up dla automatów paczkowych (Flutter; lider dwuosobowego zespołu): API rezerwacji, zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS, push Firebase."
+      - "Zbudowałem aplikację Pick-Up dla chłodzonych automatów paczkowych (Flutter, iOS i Android; lider 2-osobowego zespołu): API rezerwacji, zamówienia QR, otwieranie skrytek po kontroli GPS, push Firebase."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
-    tagline: "Globalna platforma streamingu sportu na żywo · aplikacja iOS w Swifcie z RxSwift, MVVM z warstwą serwisów"
+    url: https://www.dazn.com
+    tagline: "Globalna platforma streamingu sportu na żywo, ponad 200 krajów · iOS w Swifcie i RxSwift, MVVM z warstwą serwisów"
     location: Katowice
     start: kwi. 2020
     end: kwi. 2022
     bullets:
-      - "Odpowiadałem za reklamy i odtwarzanie wideo w aplikacji iOS DAZN (AVPlayer, HLS na żywo i VOD, DRM FairPlay, reklamy server-side (DAI), Chromecast, AirPlay) w zespole cross-platform (iOS, Android, web)."
-      - "Dowiozłem Key Moments dla transmisji na żywo: zdarzenia meczu (gol, faul) odbierane przez socket i pokazywane jako nakładka na playerze, z przewinięciem do danego momentu jednym dotknięciem."
-      - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin); CI w Jenkinsie."
+      - "Odpowiadałem za reklamy i odtwarzanie wideo w aplikacji iOS DAZN: AVPlayer, HLS na żywo i VOD, DRM FairPlay, reklamy server-side (Google DAI), Chromecast i AirPlay; zespół cross-platform w Scrumie."
+      - "Wdrożyłem Key Moments dla transmisji na żywo: zdarzenia meczu (gol, faul) odbierane przez socket i pokazywane jako nakładka na playerze, z przewinięciem do danego momentu jednym dotknięciem."
+      - "Zbudowałem zestawy testów playbacku i reklam (jednostkowe, snapshotowe, integracyjne, akceptacyjne w Gherkinie) i utrzymywałem pipeline CI w Jenkinsie."
       - "Brałem udział w rekrutacji inżynierów iOS: oceniałem zadania i prowadziłem rozmowy techniczne."
 
-  - role: Senior Software Developer
+  - role: Senior Software Developer (iOS)
     company: EUVIC
+    url: https://www.euvic.com
     tagline: "Software house · projekty iOS dla różnych klientów"
     location: Gliwice
     start: sty. 2014
     end: kwi. 2020
     bullets:
-      - "Payr (norweski fintech, zespół anglojęzyczny, 2018–2020): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
-      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2), SUBWAY Loss Prevention (obraz z kamer powiązany z transakcjami) i UPTIVO Trainer (fitness z urządzeniami zewnętrznymi)."
+      - "Payr (norweski fintech, zespół anglojęzyczny, 2018–2020): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z BankID, Vipps i innymi serwisami płatniczymi."
+      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2), SUBWAY Loss Prevention (obraz z kamer powiązany z transakcjami) i UPTIVO Trainer (aplikacja fitness z urządzeniami zewnętrznymi)."
 
   - role: iOS Developer
     company: Grupa SPOT, KiooiK

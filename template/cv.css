@@ -75,7 +75,9 @@ h2 {
 body { orphans: 2; widows: 2; }
 .job__head { margin-bottom: 1mm; }
 .job__role { font-weight: 700; font-size: 10.6pt; }
-.job__company { font-weight: 500; color: var(--accent); }
+.job__company { font-weight: 500; color: var(--ink); }
+.job__company a { color: var(--accent); }
+.project__role { color: var(--muted); }
 .job__meta { font-size: 8.8pt; color: var(--muted); margin-top: 0.3mm; }
 .job--compact .job__head { margin-bottom: 0; }
 .job__tagline { font-size: 9pt; color: var(--muted); font-style: italic; margin-top: 0.6mm; }

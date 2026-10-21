@@ -84,7 +84,7 @@
     <div class="job__head">
       <div>
         <span class="job__role">{% if p.get("url") %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</span>
-        <span class="job__company">· {{ p.role }}</span>
+        <span class="project__role">· {{ p.role }}</span>
       </div>
     </div>
     <p class="project__desc">{{ p.description }}</p>

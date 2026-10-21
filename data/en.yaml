@@ -26,11 +26,11 @@ person:
       url: https://github.com/lukaszspaczynski
 
 summary: >-
-  Senior iOS engineer with 14 years on Apple platforms: Objective-C, Swift since its 2014 release, SwiftUI
-  today; shipping React Native / Expo in production since May 2026. Strongest in modular app architecture,
-  native integrations and release engineering. At Preglife I co-designed the architecture of two native apps
-  and now co-build their React Native successor, owning the migration of native-app data (100k+ users since
-  the October 2026 launch) and the native layer in Swift and Kotlin.
+  Senior iOS Engineer with 14 years on Apple platforms: Objective-C, Swift since its 2014 release, SwiftUI
+  today; building with React Native / Expo since May 2026, in production since October 2026. Core strengths:
+  modular app architecture, native integrations and release engineering. At Preglife I co-designed the
+  architecture of two native apps and now co-build their React Native successor, owning the migration of
+  native-app data (100k+ users migrated) and the native layer in Swift and Kotlin.
 
 skills:
   - group: iOS
@@ -38,7 +38,7 @@ skills:
   - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST", "native Expo modules (Swift, Kotlin)", "Android (Kotlin, Glance widgets)"]
   - group: Process & quality
-    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (Fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)", "CRM & attribution (Braze, AppsFlyer)"]
+    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)", "CRM & attribution (Braze, AppsFlyer)"]
   - group: AI tooling
     items: ["Claude Code", "agent rules (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -59,20 +59,20 @@ experience:
           - label: Google Play
             url: https://play.google.com/store/apps/details?id=com.gravid.gravid
         bullets:
-          - "Designed and built the migration of native-app data into the on-device SQLite database (local-first) for signed-in and guest users: 100k+ users moved over automatically on an ordinary app update since the October 2026 launch."
+          - "Designed and built the migration of native-app data into the on-device SQLite database (local-first) for signed-in and guest users: 100k+ users moved over automatically on an ordinary app update in the first weeks after the October 2026 launch."
           - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance)."
-          - "Owner of the offers and ads module and of account sharing (one account for both parents); built the Tools, Wellness and Checklist modules end to end, from the data layer to analytics."
-          - "Built tooling that automates the team's work: AASA and assetlinks files generated from the app config, a shared encrypted .env (sops, age), and Maestro E2E tests (flows written with an AI coding agent against lint-enforced rules) that run in GitHub Actions with a screen recording and an analytics-event report."
-      - title: Native iOS
+          - "Own the offers and ads module and account sharing (one account for both parents); built the Tools, Wellness and Checklist modules end to end, from the SQLite data layer to analytics events."
+          - "Set up Maestro E2E tests in GitHub Actions (screen recording and analytics-event report per run; flows written with an AI coding agent against lint-enforced rules); also automated AASA and assetlinks generation from the app config and a shared encrypted .env (sops, age)."
+      - title: Native iOS (maintenance since Oct 2026)
         start: May 2022
         end: present
-        note: "Two native apps (international and Norwegian): UIKit, SwiftUI, Combine, Core Data; team of 2–4; maintenance-only since the October 2026 launch."
+        note: "Two native apps (international and Norwegian): UIKit, SwiftUI, Combine, Core Data; team of 2–4"
         bullets:
           - "Co-designed and maintained the modular architecture: ~70 Swift packages on a shared codebase, 26 of which I created, including the networking and API layer (REST, GraphQL with Apollo), the user, pregnancy and baby domain models and deep linking."
           - "Authored the SwiftUI component library (separate repo: 34 widget components, Playbook catalogue app, snapshot tests) that renders the server-driven UI (GraphQL-described screens) in the UIKit apps."
           - "Built the Onboarding, Offers and Sleep Sounds modules (audio engine, background playback timers), the WidgetKit home-screen widgets and the theming system (colours, typography and spacing defined in one place, so visual refreshes need no changes to feature code)."
-          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel (native ads), RevenueCat, Contentful, insurers If (Finland) and Tryg (Denmark), and MitID (identity verification)."
-          - "Set up and ran the release process for both apps (2–6 releases a month: Fastlane and GitHub Actions to TestFlight and the App Store, fastlane match, lint and tests on every PR); led code review for the iOS team and owned its tooling, including a Sourcery generator that scaffolds a new feature module."
+          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel (native ads), RevenueCat, Contentful, If Insurance (Finland), Tryg (Denmark), and MitID (identity verification)."
+          - "Set up and ran the release process for both apps (2–6 releases a month: fastlane and GitHub Actions to TestFlight and the App Store, fastlane match, lint and tests on every PR); led code review for the iOS team and owned its tooling, including a Sourcery generator that scaffolds a new feature module."
 
   - role: Flutter Developer (side contract)
     company: Coolomat
@@ -81,28 +81,30 @@ experience:
     start: Jan 2022
     end: Mar 2022
     bullets:
-      - "Built from scratch the Pick-Up app for refrigerated parcel lockers (Flutter, iOS and Android; lead developer of two): reservation API, QR orders, GPS-gated locker opening, Firebase push."
+      - "Built the Pick-Up app for refrigerated parcel lockers from scratch (Flutter, iOS and Android; lead developer in a two-person team): reservation API, QR orders, GPS-gated locker opening, Firebase push."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
-    tagline: "Global live-sports streaming platform · iOS app in Swift with RxSwift, MVVM with a service layer"
+    url: https://www.dazn.com
+    tagline: "Global live-sports streaming platform, 200+ countries · iOS app in Swift and RxSwift, MVVM with a service layer"
     location: Katowice, Poland
     start: Apr 2020
     end: Apr 2022
     bullets:
-      - "Owned ads and video playback in the DAZN iOS app (AVPlayer, HLS live and VOD, FairPlay DRM, server-side ad insertion (DAI), Chromecast, AirPlay) within a cross-platform Scrum team (iOS, Android, web)."
+      - "Owned ads and video playback in the DAZN iOS app: AVPlayer, HLS live and VOD, FairPlay DRM, server-side ad insertion with Google DAI, Chromecast and AirPlay; worked in a cross-platform Scrum team (iOS, Android, web)."
       - "Delivered Key Moments for live streams: match events (goals, fouls) received over a socket and shown as an overlay on the player, with one-tap seek to the moment."
-      - "Built the area's unit, snapshot, integration and Gherkin acceptance test suites; maintained Jenkins CI."
+      - "Built the playback and ads test suites (unit, snapshot, integration, Gherkin acceptance) and maintained the Jenkins CI pipeline."
       - "Took part in hiring iOS engineers: reviewed take-home assignments and conducted technical interviews."
 
-  - role: Senior Software Developer
+  - role: Senior Software Developer (iOS)
     company: EUVIC
+    url: https://www.euvic.com
     tagline: "Software consultancy · iOS projects for a range of clients"
     location: Gliwice, Poland
     start: Jan 2014
     end: Apr 2020
     bullets:
-      - "Payr (Norwegian fintech, English-speaking team, 2018–2020): built a bill management and payment app from scratch, integrated with payment services and identity providers."
+      - "Payr (Norwegian fintech, English-speaking team, 2018–2020): built a bill management and payment app from scratch, integrated with BankID, Vipps and other payment services."
       - "Developed Bosch Drivelog Connect (car data over Bluetooth / OBD2), SUBWAY Loss Prevention (camera footage matched to live transactions) and UPTIVO Trainer (fitness app working with external devices)."
 
   - role: iOS Developer
