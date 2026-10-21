@@ -1,5 +1,14 @@
 # CV – Łukasz Spaczyński
 
+**Download the CV:** [English (PDF)](out/Lukasz-Spaczynski-CV-EN.pdf) · [Polski (PDF)](out/Lukasz-Spaczynski-CV-PL.pdf)
+
+Senior iOS / Mobile Engineer · Swift · React Native. The PDFs in `out/` are always built from the
+current `data/*.yaml`, so the files above are the up-to-date CV. The rest of this README (in Polish)
+describes the generator: YAML content → Jinja2 HTML → Chromium PDF, two A4 pages, EN and PL from one template.
+The generator is MIT-licensed; the CV content is not (see `LICENSE`).
+
+---
+
 Generator profesjonalnego CV w PDF, w dwóch wersjach językowych (EN / PL), z jednego szablonu.
 
 ## Struktura
@@ -8,10 +17,11 @@ Generator profesjonalnego CV w PDF, w dwóch wersjach językowych (EN / PL), z j
 data/en.yaml        treść wersji angielskiej
 data/pl.yaml        treść wersji polskiej
 template/cv.html.j2 szablon HTML (Jinja2)
-template/cv.css     wygląd (A4, dwie kolumny)
+template/cv.css     wygląd (A4, jedna kolumna)
 build.py            render YAML → HTML → PDF (Chromium przez Playwright)
 build/              pośrednie pliki HTML i podglądy (ignorowane w git)
-out/                gotowe PDF-y
+out/                gotowe PDF-y (commitowane)
+assets/             zdjęcie do wersji PL
 ```
 
 ## Budowanie
@@ -31,8 +41,12 @@ pdftoppm -png -r 70 out/Lukasz-Spaczynski-CV-EN.pdf build/preview-EN
 
 ## Wymagania
 
-Python 3.13 z pakietami `jinja2`, `pyyaml`, `pypdf`, `playwright` (z pobranym Chromium: `python3 -m playwright install chromium`).
-Do podglądów opcjonalnie `poppler` (`brew install poppler`).
+Python 3.13 z pakietami z `requirements.txt` (`pip install -r requirements.txt`) i pobranym Chromium
+(`python3 -m playwright install chromium`). Do podglądów opcjonalnie `poppler` (`brew install poppler`).
+
+Układ jest strojony pod czcionkę Helvetica Neue (macOS). Na systemie bez niej Chromium użyje zamiennika,
+a łamanie linii i stron może się różnić – dlatego gotowe PDF-y w `out/` są commitowane i to one są źródłem prawdy,
+a nie build z innej maszyny.
 
 ## Układ
 
