@@ -15,7 +15,7 @@ labels:
 person:
   name: Łukasz Spaczyński
   photo: ../assets/photo.jpg
-  headline: Senior Mobile Engineer · iOS, React Native
+  headline: Senior iOS Engineer · Swift, SwiftUI · React Native i Flutter
   email: lukasz.spaczynski@gmail.com
   phone: "+48 506 180 356"
   location: Katowice
@@ -25,21 +25,19 @@ person:
       url: https://www.linkedin.com/in/lukaszspaczynski/
 
 summary: >-
-  Senior Mobile Engineer z 14 latami doświadczenia w iOS, od 2026 roku także w React Native.
-  Od czterech lat współodpowiadam za architekturę aplikacji Preglife: dwóch natywnych aplikacji
-  iOS dla 11 rynków (ok. 70 pakietów Swift), a od 2026 roku ich następcy w React Native / Expo.
-  Pracuję w pełnym cyklu: od decyzji architektonicznych i modułów natywnych po CI/CD
-  i wydania w App Store i Google Play.
+  Inżynier iOS z 14-letnią praktyką w Swifcie i SwiftUI; od 2022 roku równolegle rozwijam aplikacje
+  wieloplatformowe: Flutter, a od 2026 React Native / Expo w produkcji dla 11 rynków, zawsze od strony
+  natywnej (moduły Expo w Swifcie i Kotlinie, widgety, integracje SDK). Od czterech lat współodpowiadam
+  za architekturę aplikacji Preglife: dwóch natywnych aplikacji iOS (ok. 70 pakietów Swift) i ich następcy
+  w React Native. Pracuję w pełnym cyklu: od architektury po CI/CD i wydania w App Store i Google Play.
 
 skills:
-  - group: Języki
-    items: ["Swift (od 2014)", "Objective-C", "TypeScript", "Kotlin (mostki natywne)", "Dart"]
   - group: iOS
-    items: ["SwiftUI", "UIKit", "Swift Concurrency", "Combine", "Swift Package Manager i architektura modułowa", "Coordinator / MVVM", "wstrzykiwanie zależności", "Core Data", "WidgetKit", "powiadomienia push i deep linking", "StoreKit / RevenueCat"]
+    items: ["Swift (od 2014)", "SwiftUI", "UIKit", "Objective-C", "Swift Concurrency", "Combine", "SPM i architektura modułowa", "Coordinator / MVVM", "wstrzykiwanie zależności", "Core Data", "WidgetKit", "powiadomienia push i deep linking", "StoreKit / RevenueCat"]
   - group: Inżynieria
     items: ["testy jednostkowe / snapshotowe / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Crashlytics)", "komunikacja i atrybucja (Braze, AppsFlyer)"]
-  - group: Cross-platform
-    items: ["React Native", "Expo", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "lokalizacja na 11 rynków", "Flutter (projekt w 2022)"]
+  - group: Multiplatform
+    items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "Flutter / Dart"]
   - group: Narzędzia AI
     items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -58,8 +56,9 @@ experience:
         note: "Nowa aplikacja na iOS i Android, wydana w październiku 2026 w miejsce obu aplikacji natywnych; zespół pięcioosobowy."
         bullets:
           - "Odpowiadam za moduł ofert i reklam, współdzielenie konta oraz import danych z aplikacji natywnych; zbudowałem też moduły Narzędzia, Wellness i Checklista, od warstwy danych po analitykę."
-          - "Zbudowałem ścieżkę importu danych z aplikacji natywnych (konta i dane lokalne), dzięki której dotychczasowi użytkownicy przeszli na nową aplikację zwykłą aktualizacją, bez utraty danych. W logowaniu i onboardingu odpowiadałem też za sesję użytkownika i zgody zdrowotne przy rejestracji."
-          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze (odroczona inicjalizacja SDK bez utraty zdarzeń startu, akcje wiadomości in-app) oraz moduł widgetu ekranu głównego na iOS (WidgetKit) i Android (Glance); deep linki z powiadomień push działają także przy zimnym starcie."
+          - "Zbudowałem ścieżkę importu danych z aplikacji natywnych (konta i dane lokalne), dzięki której dotychczasowi użytkownicy przeszli na nową aplikację zwykłą aktualizacją, bez utraty danych."
+          - "Zbudowałem tooling zespołu: generatory AASA i assetlinks z konfiguracji aplikacji i klasyfikatora deep linków zamiast ręcznej listy, zaszyfrowany współdzielony .env (sops, age) z hookiem pre-commit oraz testy E2E w Maestro na Androidzie z nagraniem i raportem analityki z każdego przebiegu, w GitHub Actions."
+          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze (odroczona inicjalizacja SDK bez utraty zdarzeń startu, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance); deep linki z push działają także przy zimnym starcie."
       - title: iOS natywne
         start: maj 2022
         end: maj 2026
@@ -91,7 +90,6 @@ experience:
     bullets:
       - "W zespole cross-platform (iOS, Android, web) pracującym w Scrumie odpowiadałem za obszar reklam i odtwarzania wideo w aplikacji iOS DAZN."
       - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) oraz wspierałem QA w automatyzacji testów; utrzymywałem buildy w CI (Jenkins)."
-      - "Utrzymywałem bazę kodu: aktualizacje zależności, refaktoryzacje, przeglądy kodu."
       - "Brałem udział w rekrutacji inżynierów iOS: ocena zadań kandydatów i prowadzenie rozmów technicznych."
 
   - role: Senior Software Developer
