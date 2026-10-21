@@ -77,6 +77,10 @@ h2 {
 .job__company { font-weight: 500; color: var(--accent); }
 .job__meta { font-size: 8.8pt; color: var(--muted); margin-top: 0.3mm; }
 .job__tagline { font-size: 9pt; color: var(--muted); font-style: italic; margin-top: 0.6mm; }
+.phase { margin-top: 1.6mm; }
+.phase__head { break-after: avoid; break-inside: avoid; margin-bottom: 0.8mm; }
+.phase__title { font-weight: 700; font-size: 9.8pt; }
+.phase__meta { font-size: 8.8pt; color: var(--muted); }
 .bullets { max-width: 172mm; }
 .bullets li { position: relative; padding-left: 3.6mm; margin-bottom: 0.8mm; }
 .bullets li::before {

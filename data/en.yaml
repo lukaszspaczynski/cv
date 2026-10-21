@@ -24,58 +24,77 @@ person:
       url: https://www.linkedin.com/in/lukaszspaczynski/
 
 summary: >-
-  Senior Mobile Engineer with 14 years on iOS and, since 2026, React Native. For the last four years
+  Senior Mobile Engineer with 14 years on iOS, React Native since 2026. For the last four years
   I have co-owned the architecture of Preglife's apps: two native iOS applications serving 11 markets
-  (~70 Swift packages), and since 2026 their React Native / Expo successor. I take features from idea
-  to release on the App Store and Google Play, make architecture decisions together with the team
-  and keep quality high through tests, CI/CD and code review.
+  (~70 Swift packages), and since 2026 their React Native / Expo successor. I work across the full cycle: from architecture decisions and native modules to CI/CD
+  and releases on the App Store and Google Play.
 
 skills:
   - group: Languages
-    items: ["Swift (since 2014)", "Objective-C", "TypeScript", "Kotlin (native bridges)"]
+    items: ["Swift (since 2014)", "Objective-C", "TypeScript", "Kotlin (native bridges)", "Dart"]
   - group: iOS
     items: ["SwiftUI", "UIKit", "Swift Concurrency", "Combine", "Swift Package Manager & modular architecture", "Coordinator / MVVM", "dependency injection", "Core Data", "WidgetKit", "push notifications & deep linking", "StoreKit / RevenueCat"]
   - group: Engineering
-    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (Fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Braze, AppsFlyer, Crashlytics)"]
+    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (Fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)", "messaging & attribution (Braze, AppsFlyer)"]
   - group: Cross-platform
-    items: ["React Native", "Expo", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST", "localisation for 11 markets"]
+    items: ["React Native", "Expo", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST", "localisation for 11 markets", "Flutter (2022 project)"]
   - group: AI tooling
-    items: ["Claude Code in daily iOS and RN work", "agent rules and instructions in the team's repositories (CLAUDE.md)", "MCP integrations (Jira, Confluence, Figma)"]
+    items: ["Claude Code", "agent rules (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
 experience:
   - role: Senior Mobile Engineer
     company: Preglife
     url: https://apps.apple.com/app/id390427747
-    tagline: "App for expecting and new parents, 11 markets · App Store 4.9/5, 29k ratings · apps.apple.com/app/id390427747"
+    tagline: "App for expectant and new parents, 11 markets · App Store 4.9/5, 29k ratings · apps.apple.com/app/id390427747"
     location: Katowice, Poland
     start: May 2022
     end: present
+    phases:
+      - title: React Native / Expo
+        start: May 2026
+        end: present
+        note: "New iOS and Android app released in October 2026 in place of both native apps; team of five."
+        bullets:
+          - "Own the offers and ads module, account sharing and the import of data from the native apps; also built the Tools, Wellness and Checklist modules, from the data layer through to analytics."
+          - "Built the data import path from the native apps (accounts and local-only data), which let existing users move to the new app through a regular update, without data loss. Within authentication and onboarding, also owned the user session and health consents at registration."
+          - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation with no lost session-start events, in-app message actions) and a home-screen widget module for iOS (WidgetKit) and Android (Glance); push-notification deep links work including on cold start."
+      - title: Native iOS
+        start: May 2022
+        end: May 2026
+        note: "Two native apps (international and Norwegian), UIKit and SwiftUI, 11 markets; iOS team of 2–4."
+        bullets:
+          - "Co-designed and maintained the modular architecture: ~70 Swift packages on a shared codebase, 26 of which I created myself, including the networking and API layer (REST, GraphQL with Apollo), the user, pregnancy and baby domain models, the Braze service, mapping of GraphQL widgets to UI and deep-link handling. A deliberate trade-off: clear module boundaries at the cost of full-build time."
+          - "Built the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
+          - "Designed and implemented the app's theming system: colours, typography and spacing defined in one place, so periodic visual refreshes need no changes to feature code."
+          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurers If Finland and Tryg Denmark, MitID identity verification."
+          - "Built and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, code signing with Match, lint and format checks on every PR."
+
+  - role: Lead Flutter Developer (contract)
+    company: Coolomat
+    url: https://coolomat.com
+    tagline: "Slovenian maker of refrigerated parcel lockers · Coolomat Pick-Up app for iOS and Android in Flutter · lead developer in a two-person team"
+    location: remote
+    start: Jan 2022
+    end: Mar 2022
     bullets:
-      - "In Preglife's new React Native / Expo app (iOS + Android), released in October 2026 in place of both native apps, own the offers and ads module, account sharing and the import of data from the native apps."
-      - "Built the Tools, Wellness and Checklist modules from the data layer through to analytics. In local-first SQLite sync, authentication and onboarding my own work was the import path from the native apps (adopting the legacy login, reporting imported pregnancies and babies to the Profile Engine, unblocking stalled imports), a session that survives a market change, favourites and daily tips as account data, and health consents at registration."
-      - "The app has been built by a team of five since May 2026. The technology switch was invisible to users: both account-based and local-only users moved over through a regular update, without data loss."
-      - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge that defers SDK initialisation until JS has configured it (no lost session-start events) and routes in-app message actions to the app, and a home-screen widget module for iOS and Android (Glance); push-notification deep links work on a cold start too."
-      - "2022–2026: in an iOS team of 2–4 engineers, co-designed and maintained the modular architecture of two native iOS apps (UIKit and SwiftUI; international and Norwegian) for 11 markets, ~70 Swift packages on a shared codebase; I created 26 of them myself, including the networking and API layer (REST, GraphQL with Apollo), the user, pregnancy and baby domain models, the Braze service, GraphQL-widget-to-UI mapping and deep-link handling. A deliberate trade-off: clear module boundaries at the cost of full-build time, because an SPM dependency graph of that size slows package resolution and compilation."
-      - "Built the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
-      - "Designed and implemented the app's theming system: colours, typography and spacing defined in one place, so periodic visual refreshes need no changes to feature code."
-      - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurers If Finland and Tryg Denmark, MitID identity verification."
-      - "Built and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, code signing with Match, lint and format checks on every PR."
+      - "Set up the project and its architecture (data / domain / presentation layers, use cases, RxDart, GetX) and built the integration with Coolomat's reservation API: order list with pick-up QR codes, remote locker opening after a GPS distance check, phone-number verification."
+      - "Integrated Firebase push notifications with token registration, consent and permission handling in settings, and EN/SL translations; prepared icons and builds."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
-    tagline: "Global live-sports streaming platform · iOS app in Swift with RxSwift (FRP), service-oriented architecture on MVVM"
+    tagline: "Global live-sports streaming platform · iOS app in Swift with RxSwift (FRP), MVVM with a service layer"
     location: Katowice, Poland
     start: Apr 2020
     end: Apr 2022
     bullets:
       - "Owned the ads and video playback area of the DAZN iOS app within a cross-platform Scrum team (iOS, Android, web)."
       - "Wrote unit, snapshot, integration and Gherkin acceptance tests and supported QA with test automation; maintained CI builds (Jenkins)."
-      - "Maintained the codebase: dependency updates, SOLID-driven refactoring, code reviews across the team."
+      - "Maintained the codebase: dependency updates, refactoring, code reviews across the team."
       - "Took part in hiring iOS engineers: assessed candidates' assignments and conducted technical interviews."
 
   - role: Senior Software Developer
     company: EUVIC
-    tagline: "Software house · projects for various clients, assigned wherever iOS work was needed"
+    tagline: "Software consultancy · iOS projects for a range of clients"
     location: Gliwice, Poland
     start: Jan 2014
     end: Apr 2020

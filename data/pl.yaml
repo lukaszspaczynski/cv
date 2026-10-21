@@ -28,20 +28,20 @@ summary: >-
   Senior Mobile Engineer z 14 latami doświadczenia w iOS, od 2026 roku także w React Native.
   Od czterech lat współodpowiadam za architekturę aplikacji Preglife: dwóch natywnych aplikacji
   iOS dla 11 rynków (ok. 70 pakietów Swift), a od 2026 roku ich następcy w React Native / Expo.
-  Doprowadzam funkcje od pomysłu do wydania w App Store i Google Play, podejmuję z zespołem
-  decyzje architektoniczne i pilnuję jakości przez testy, CI/CD i przeglądy kodu.
+  Pracuję w pełnym cyklu: od decyzji architektonicznych i modułów natywnych po CI/CD
+  i wydania w App Store i Google Play.
 
 skills:
   - group: Języki
-    items: ["Swift (od 2014)", "Objective-C", "TypeScript", "Kotlin (mostki natywne)"]
+    items: ["Swift (od 2014)", "Objective-C", "TypeScript", "Kotlin (mostki natywne)", "Dart"]
   - group: iOS
     items: ["SwiftUI", "UIKit", "Swift Concurrency", "Combine", "Swift Package Manager i architektura modułowa", "Coordinator / MVVM", "wstrzykiwanie zależności", "Core Data", "WidgetKit", "powiadomienia push i deep linking", "StoreKit / RevenueCat"]
   - group: Inżynieria
-    items: ["testy jednostkowe / snapshotowe / E2E (XCTest, Jest, Maestro)", "CI/CD i proces wydawniczy (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Braze, AppsFlyer, Crashlytics)"]
+    items: ["testy jednostkowe / snapshotowe / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Crashlytics)", "komunikacja i atrybucja (Braze, AppsFlyer)"]
   - group: Cross-platform
-    items: ["React Native", "Expo", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "lokalizacja na 11 rynków"]
+    items: ["React Native", "Expo", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "lokalizacja na 11 rynków", "Flutter (projekt w 2022)"]
   - group: Narzędzia AI
-    items: ["Claude Code w codziennej pracy nad kodem iOS i RN", "reguły i instrukcje dla agentów w repozytoriach zespołu (CLAUDE.md)", "integracje MCP (Jira, Confluence, Figma)"]
+    items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
 experience:
   - role: Senior Mobile Engineer
@@ -51,16 +51,36 @@ experience:
     location: Katowice
     start: maj 2022
     end: obecnie
+    phases:
+      - title: React Native / Expo
+        start: maj 2026
+        end: obecnie
+        note: "Nowa aplikacja na iOS i Android, wydana w październiku 2026 w miejsce obu aplikacji natywnych; zespół pięcioosobowy."
+        bullets:
+          - "Odpowiadam za moduł ofert i reklam, współdzielenie konta oraz import danych z aplikacji natywnych; zbudowałem też moduły Narzędzia, Wellness i Checklista, od warstwy danych po analitykę."
+          - "Zbudowałem ścieżkę importu danych z aplikacji natywnych (konta i dane lokalne), dzięki której dotychczasowi użytkownicy przeszli na nową aplikację zwykłą aktualizacją, bez utraty danych. W logowaniu i onboardingu odpowiadałem też za sesję użytkownika i zgody zdrowotne przy rejestracji."
+          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze (odroczona inicjalizacja SDK bez utraty zdarzeń startu, akcje wiadomości in-app) oraz moduł widgetu ekranu głównego na iOS (WidgetKit) i Android (Glance); deep linki z powiadomień push działają także przy zimnym starcie."
+      - title: iOS natywne
+        start: maj 2022
+        end: maj 2026
+        note: "Dwie aplikacje natywne (międzynarodowa i norweska), UIKit i SwiftUI, 11 rynków; zespół iOS 2–4 osoby."
+        bullets:
+          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift na wspólnym kodzie, z których 26 założyłem sam, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, serwis Braze, mapowanie widgetów z GraphQL na UI i obsługę deep linków. Świadomy kompromis: wyraźne granice modułów kosztem czasu pełnego builda."
+          - "Zbudowałem moduły Onboarding, Ustawienia, Oferty, Narzędzia, Wyszukiwarka, Statystyki i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgety ekranu głównego."
+          - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie funkcji."
+          - "Odpowiadałem za integracje zewnętrzne i partnerskie: Braze, AppsFlyer, reklamy natywne Kevel, subskrypcje RevenueCat, Contentful, Apollo GraphQL, ubezpieczyciele If Finlandia i Tryg Dania, weryfikacja tożsamości MitID."
+          - "Zbudowałem i prowadziłem proces wydawania obu aplikacji (2–6 wydań miesięcznie): pipeline'y Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez Match, lint i formatowanie w każdym PR."
+
+  - role: Lead Flutter Developer (zlecenie)
+    company: Coolomat
+    url: https://coolomat.com
+    tagline: "Słoweński producent chłodzonych automatów paczkowych · aplikacja Coolomat Pick-Up na iOS i Android we Flutterze · główny programista w dwuosobowym zespole"
+    location: zdalnie
+    start: sty 2022
+    end: mar 2022
     bullets:
-      - "W nowej aplikacji Preglife w React Native / Expo (iOS + Android), wydanej w październiku 2026 w miejsce obu aplikacji natywnych, odpowiadam za moduł ofert i reklam, współdzielenie konta oraz import danych z aplikacji natywnych."
-      - "Zbudowałem od warstwy danych po analitykę moduły Narzędzia, Wellness i Checklista. W synchronizacji local-first (SQLite), logowaniu i onboardingu moje były: ścieżka importu danych z aplikacji natywnych (przejęcie starego logowania, zgłaszanie zaimportowanych ciąż i dzieci do Profile Engine, odblokowanie zatrzymanych importów), sesja odporna na zmianę rynku, ulubione i porady dnia jako dane konta oraz zgody zdrowotne przy rejestracji."
-      - "Aplikację budujemy od maja 2026 w pięcioosobowym zespole. Zmiana technologii była dla użytkowników niewidoczna: z kontem i lokalni bez konta przeszli na nią zwykłą aktualizacją, bez utraty danych."
-      - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze, który wstrzymuje inicjalizację SDK do czasu konfiguracji z JS (bez utraty zdarzeń ze startu sesji) i przekazuje akcje wiadomości in-app do aplikacji, oraz moduł widgetu ekranu głównego na iOS i Android (Glance); deep linki z powiadomień push działają także przy zimnym starcie."
-      - "2022–2026: w zespole iOS liczącym 2–4 osoby współprojektowałem i utrzymywałem modułową architekturę dwóch natywnych aplikacji iOS (UIKit i SwiftUI; międzynarodowej i norweskiej) dla 11 rynków, ok. 70 pakietów Swift na wspólnym kodzie; sam założyłem 26 z nich, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, serwis Braze, mapowanie widgetów z GraphQL na UI oraz obsługę deep linków. Świadomy kompromis: wyraźne granice modułów kosztem czasu pełnego builda (graf zależności SPM tej wielkości spowalnia kompilację)."
-      - "Zbudowałem moduły Onboarding, Ustawienia, Oferty, Narzędzia, Wyszukiwarka, Statystyki i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgety ekranu głównego."
-      - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie funkcji."
-      - "Odpowiadałem za integracje zewnętrzne i partnerskie: Braze, AppsFlyer, reklamy natywne Kevel, subskrypcje RevenueCat, Contentful, Apollo GraphQL, ubezpieczyciele If Finlandia i Tryg Dania, weryfikacja tożsamości MitID."
-      - "Zbudowałem i prowadziłem proces wydawniczy obu aplikacji (2–6 wydań miesięcznie): pipeline'y Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez Match, lint i formatowanie w każdym PR."
+      - "Założyłem projekt i jego architekturę (warstwy data / domain / presentation, use case'y, RxDart, GetX) i zbudowałem integrację z API rezerwacji Coolomat: lista zamówień z kodami QR odbioru, zdalne otwieranie skrytek po sprawdzeniu odległości GPS, weryfikacja numeru telefonu."
+      - "Zintegrowałem powiadomienia push (Firebase) z rejestracją tokenu, obsługę zgód i uprawnień w ustawieniach oraz tłumaczenia (EN, SL); przygotowałem ikony i buildy."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
@@ -71,12 +91,12 @@ experience:
     bullets:
       - "W zespole cross-platform (iOS, Android, web) pracującym w Scrumie odpowiadałem za obszar reklam i odtwarzania wideo w aplikacji iOS DAZN."
       - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) oraz wspierałem QA w automatyzacji testów; utrzymywałem buildy w CI (Jenkins)."
-      - "Utrzymywałem bazę kodu: aktualizacje zależności, refaktoryzacje w duchu SOLID, przeglądy kodu."
+      - "Utrzymywałem bazę kodu: aktualizacje zależności, refaktoryzacje, przeglądy kodu."
       - "Brałem udział w rekrutacji inżynierów iOS: ocena zadań kandydatów i prowadzenie rozmów technicznych."
 
   - role: Senior Software Developer
     company: EUVIC
-    tagline: "Software house · projekty dla różnych klientów, tam gdzie był potrzebny iOS"
+    tagline: "Software house · projekty iOS dla różnych klientów"
     location: Gliwice
     start: sty 2014
     end: kwi 2020

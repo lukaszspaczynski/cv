@@ -53,9 +53,24 @@
       <div class="job__meta">{{ job.start }} – {{ job.end }} · {{ job.location }}</div>
       {% if job.get("tagline") %}<div class="job__tagline">{{ job.tagline }}</div>{% endif %}
     </div>
+    {% if job.get("phases") %}
+    {% for ph in job.phases %}
+    <div class="phase">
+      <div class="phase__head">
+        <span class="phase__title">{{ ph.title }}</span>
+        <span class="phase__meta">· {{ ph.start }} – {{ ph.end }}</span>
+        {% if ph.get("note") %}<div class="job__tagline">{{ ph.note }}</div>{% endif %}
+      </div>
+      <ul class="bullets">
+        {% for b in ph.bullets %}<li>{{ b }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    {% else %}
     <ul class="bullets">
       {% for b in job.bullets %}<li>{{ b }}</li>{% endfor %}
     </ul>
+    {% endif %}
   </article>
   {% endfor %}
 </section>
