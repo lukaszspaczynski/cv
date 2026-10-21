@@ -25,11 +25,11 @@ person:
       url: https://www.linkedin.com/in/lukaszspaczynski/
 
 summary: >-
-  Senior Mobile Developer z 18-letnim doświadczeniem, w tym 14 lat w iOS. Od czterech lat
-  współodpowiadam za architekturę aplikacji Preglife: dwóch natywnych aplikacji iOS dla 11 rynków
-  (ok. 70 pakietów Swift), a od 2026 roku ich następcy w React Native / Expo. Doprowadzam funkcje
-  od pomysłu do wydania w App Store i Google Play, podejmuję z zespołem decyzje architektoniczne
-  i pilnuję jakości przez testy, CI/CD i przeglądy kodu.
+  Senior Mobile Engineer z 14 latami doświadczenia w iOS, od 2026 roku także w React Native.
+  Od czterech lat współodpowiadam za architekturę aplikacji Preglife: dwóch natywnych aplikacji
+  iOS dla 11 rynków (ok. 70 pakietów Swift), a od 2026 roku ich następcy w React Native / Expo.
+  Doprowadzam funkcje od pomysłu do wydania w App Store i Google Play, podejmuję z zespołem
+  decyzje architektoniczne i pilnuję jakości przez testy, CI/CD i przeglądy kodu.
 
 skills:
   - group: Języki
@@ -39,43 +39,50 @@ skills:
   - group: Inżynieria
     items: ["testy jednostkowe / snapshotowe / E2E (XCTest, Jest, Maestro)", "CI/CD i proces wydawniczy (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Braze, AppsFlyer, Crashlytics)"]
   - group: Cross-platform
-    items: ["React Native", "Expo", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST"]
+    items: ["React Native", "Expo", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "lokalizacja na 11 rynków"]
+  - group: Narzędzia AI
+    items: ["Claude Code w codziennej pracy nad kodem iOS i RN", "reguły i instrukcje dla agentów w repozytoriach zespołu (CLAUDE.md)", "integracje MCP (Jira, Confluence, Figma)"]
 
 experience:
   - role: Senior Mobile Engineer
     company: Preglife
-    url: https://apps.apple.com/pl/app/pregnancy-tracker-preglife/id390427747
-    tagline: "Aplikacja dla kobiet w ciąży i rodziców, 11 rynków · App Store 4,9★, 29 tys. ocen"
+    url: https://apps.apple.com/pl/app/id390427747
+    tagline: "Aplikacja dla kobiet w ciąży i rodziców, 11 rynków · App Store 4,9/5, 29 tys. ocen · apps.apple.com/pl/app/id390427747"
     location: Katowice
     start: maj 2022
     end: obecnie
     bullets:
-      - "Od maja 2026 jako jeden z pięciu inżynierów zbudowałem nową aplikację Preglife w React Native / Expo (iOS + Android), wydaną 14 października 2026 w miejsce obu aplikacji natywnych; dotychczasowi użytkownicy, z kontem i korzystający lokalnie bez konta, zostali zmigrowani bez utraty danych."
-      - "W nowej aplikacji odpowiadam za moduł ofert i reklam, współdzielenie konta oraz import danych z aplikacji natywnych; współtworzę synchronizację local-first (SQLite), logowanie i onboarding; zbudowałem moduły Narzędzia, Wellness i Checklista od warstwy danych po analitykę."
-      - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze, który wstrzymuje inicjalizację SDK do czasu konfiguracji z JS (bez utraty zdarzeń ze startu sesji) i przekazuje akcje wiadomości in-app do aplikacji, moduł widgetu ekranu głównego (iOS i Android Glance) oraz wybór backendu z argumentu startowego dla buildów wewnętrznych; deep linki z pusha przeżywają zimny start."
-      - "2022–2026: w zespole iOS liczącym 2–4 osoby współprojektowałem i utrzymywałem modułową architekturę dwóch natywnych aplikacji iOS (międzynarodowej i norweskiej) dla 11 rynków, ok. 70 pakietów Swift na wspólnym kodzie; świadomy kompromis: wyraźne granice modułów kosztem czasu builda."
-      - "Byłem autorem modułów Onboarding, Ustawienia, Oferty, Narzędzia, Wyszukiwarka, Statystyki i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgetów ekranu głównego."
+      - "W nowej aplikacji Preglife w React Native / Expo (iOS + Android), wydanej w październiku 2026 w miejsce obu aplikacji natywnych, odpowiadam za moduł ofert i reklam, współdzielenie konta oraz import danych z aplikacji natywnych."
+      - "Zbudowałem od warstwy danych po analitykę moduły Narzędzia, Wellness i Checklista. W synchronizacji local-first (SQLite), logowaniu i onboardingu moje były: ścieżka importu danych z aplikacji natywnych (przejęcie starego logowania, zgłaszanie zaimportowanych ciąż i dzieci do Profile Engine, odblokowanie zatrzymanych importów), sesja odporna na zmianę rynku, ulubione i porady dnia jako dane konta oraz zgody zdrowotne przy rejestracji."
+      - "Aplikację budujemy od maja 2026 w pięcioosobowym zespole. Zmiana technologii była dla użytkowników niewidoczna: z kontem i lokalni bez konta przeszli na nią zwykłą aktualizacją, bez utraty danych."
+      - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze, który wstrzymuje inicjalizację SDK do czasu konfiguracji z JS (bez utraty zdarzeń ze startu sesji) i przekazuje akcje wiadomości in-app do aplikacji, oraz moduł widgetu ekranu głównego na iOS i Android (Glance); deep linki z powiadomień push działają także przy zimnym starcie."
+      - "2022–2026: w zespole iOS liczącym 2–4 osoby współprojektowałem i utrzymywałem modułową architekturę dwóch natywnych aplikacji iOS (UIKit i SwiftUI; międzynarodowej i norweskiej) dla 11 rynków, ok. 70 pakietów Swift na wspólnym kodzie; sam założyłem 26 z nich, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, serwis Braze, mapowanie widgetów z GraphQL na UI oraz obsługę deep linków. Świadomy kompromis: wyraźne granice modułów kosztem czasu pełnego builda (graf zależności SPM tej wielkości spowalnia kompilację)."
+      - "Zbudowałem moduły Onboarding, Ustawienia, Oferty, Narzędzia, Wyszukiwarka, Statystyki i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgety ekranu głównego."
       - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie funkcji."
       - "Odpowiadałem za integracje zewnętrzne i partnerskie: Braze, AppsFlyer, reklamy natywne Kevel, subskrypcje RevenueCat, Contentful, Apollo GraphQL, ubezpieczyciele If Finlandia i Tryg Dania, weryfikacja tożsamości MitID."
-      - "Zbudowałem i prowadziłem proces wydawniczy obu aplikacji (2–6 wydań miesięcznie): pipeline'y Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez Match, lint i formatowanie w każdym pull requeście."
+      - "Zbudowałem i prowadziłem proces wydawniczy obu aplikacji (2–6 wydań miesięcznie): pipeline'y Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez Match, lint i formatowanie w każdym PR."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
+    tagline: "Globalna platforma streamingu sportu na żywo · aplikacja iOS w Swift, RxSwift (FRP), architektura serwisowa na MVVM"
     location: Katowice
     start: kwi 2020
     end: kwi 2022
     bullets:
-      - Rozwijałem reklamy i odtwarzacz wideo w aplikacji iOS DAZN (transmisje sportowe na żywo), w zespole Scrum obejmującym iOS, Android i web.
-      - Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) i pracowałem z QA nad jakością wydań.
+      - "W zespole cross-platform (iOS, Android, web) pracującym w Scrumie odpowiadałem za obszar reklam i odtwarzania wideo w aplikacji iOS DAZN."
+      - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) oraz wspierałem QA w automatyzacji testów; utrzymywałem buildy w CI (Jenkins)."
+      - "Utrzymywałem bazę kodu: aktualizacje zależności, refaktoryzacje w duchu SOLID, przeglądy kodu."
+      - "Brałem udział w rekrutacji inżynierów iOS: ocena zadań kandydatów i prowadzenie rozmów technicznych."
 
   - role: Senior Software Developer
     company: EUVIC
+    tagline: "Software house · projekty dla różnych klientów, tam gdzie był potrzebny iOS"
     location: Gliwice
     start: sty 2014
     end: kwi 2020
     bullets:
       - "Payr (norweski fintech): zbudowałem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
-      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2) i SUBWAY Loss Prevention (monitoring połączony z transakcjami na żywo), a od podstaw zbudowałem UPTIVO Trainer (aplikacja fitness z urządzeniami peryferyjnymi)."
+      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2) i SUBWAY Loss Prevention (monitoring z transakcjami na żywo), a od podstaw zbudowałem UPTIVO Trainer (fitness z urządzeniami peryferyjnymi)."
 
   - role: iOS Developer
     company: Grupa SPOT · KiooiK
@@ -85,16 +92,7 @@ experience:
     bullets:
       - "Zbudowałem od podstaw aplikację mHOSP na iPada dla branży med-tech, aplikację z przepisami Dr. Oetker Rezeptideen i grę pamięciową na iPada w Objective-C i Cocos2d."
 
-  - role: Programista PHP
-    company: eSKY · E NET PRODUCTION · RSI internet
-    location: Katowice / Rybnik
-    start: lip 2008
-    end: cze 2012
-    bullets:
-      - Rozwijałem backend wyszukiwarki lotów, moduły platformy e-commerce i oprogramowanie intranetowe (PHP 5); integracje web services, wdrożenia produkcyjne, praca w Scrumie.
-
-ai:
-  - "Codziennie pracuję z agentami kodującymi (Claude Code) w produkcyjnym kodzie iOS i React Native i buduję dla zespołu ich kontekst: współautor instrukcji repozytoryjnych (CLAUDE.md / AGENTS.md), autor skilli projektowych (graf wiedzy o kodzie dla ok. 70 pakietów, testy snapshotowe, konwencje analityki) i integracji MCP z Jira, Confluence i Figmą, dzięki czemu agent pracuje według tych samych reguł architektury i konwencji, co zespół."
+ai: []
 
 projects:
   - name: Sterownik ogrzewania podłogowego
@@ -115,5 +113,4 @@ languages:
     level: B2, język pracy w Preglife
 
 consent: >-
-  Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym dokumencie
-  dla potrzeb procesu rekrutacji, zgodnie z RODO (Rozporządzenie (UE) 2016/679).
+  Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb procesu rekrutacji zgodnie z RODO (Rozporządzenie (UE) 2016/679).

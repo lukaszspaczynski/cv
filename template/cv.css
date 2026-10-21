@@ -42,7 +42,7 @@ p { margin: 0; }
 .head__where { margin-top: 1.2mm; font-size: 8.8pt; color: var(--muted); white-space: nowrap; }
 
 /* ---------- sections ---------- */
-section { margin-bottom: 5mm; }
+section { margin-bottom: 4.5mm; }
 h2 {
   font-size: 10.5pt;
   font-weight: 700;
@@ -68,7 +68,7 @@ h2 {
 .skill__group { font-weight: 700; }
 
 /* ---------- experience ---------- */
-.job, .project { margin-bottom: 3.6mm; }
+.job, .project { margin-bottom: 3.2mm; }
 .project { break-inside: avoid; }
 .job__head { break-after: avoid; break-inside: avoid; }
 .bullets li { break-inside: avoid; }
@@ -78,7 +78,7 @@ h2 {
 .job__meta { font-size: 8.8pt; color: var(--muted); margin-top: 0.3mm; }
 .job__tagline { font-size: 9pt; color: var(--muted); font-style: italic; margin-top: 0.6mm; }
 .bullets { max-width: 172mm; }
-.bullets li { position: relative; padding-left: 3.6mm; margin-bottom: 1mm; }
+.bullets li { position: relative; padding-left: 3.6mm; margin-bottom: 0.8mm; }
 .bullets li::before {
   content: "";
   position: absolute;
@@ -101,8 +101,8 @@ h2 {
 
 /* ---------- consent ---------- */
 .consent {
-  margin-top: 3mm;
-  padding-top: 1.5mm;
+  margin-top: 2mm;
+  padding-top: 1.2mm;
   border-top: 1px solid var(--rule);
   font-size: 7.6pt;
   color: var(--muted);

@@ -32,6 +32,15 @@
   {% endfor %}
 </section>
 
+{% if ai %}
+<section class="ai">
+  <h2>{{ labels.ai }}</h2>
+  <ul class="bullets">
+    {% for b in ai %}<li>{{ b }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 <section class="experience">
   <h2>{{ labels.experience }}</h2>
   {% for job in experience %}
@@ -50,15 +59,6 @@
   </article>
   {% endfor %}
 </section>
-
-{% if ai %}
-<section class="ai">
-  <h2>{{ labels.ai }}</h2>
-  <ul class="bullets">
-    {% for b in ai %}<li>{{ b }}</li>{% endfor %}
-  </ul>
-</section>
-{% endif %}
 
 {% if projects %}
 <section>
