@@ -81,6 +81,7 @@ body { orphans: 2; widows: 2; }
 .job__meta { font-size: 8.8pt; color: var(--muted); margin-top: 0.3mm; }
 .job--compact .job__head { margin-bottom: 0; }
 .job__tagline { font-size: 9pt; color: var(--muted); font-style: italic; margin-top: 0.6mm; }
+.job__tagline a { color: var(--accent); }
 .phase { margin-top: 1.6mm; }
 .phase .bullets li:first-child { break-before: avoid; }
 .phase__head { break-after: avoid; break-inside: avoid; margin-bottom: 0.8mm; }

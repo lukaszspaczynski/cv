@@ -26,9 +26,9 @@ person:
       url: https://github.com/lukaszspaczynski
 
 summary: >-
-  Senior iOS Engineer with 14 years on Apple platforms: Objective-C, Swift since its 2014 release and
-  SwiftUI; building with React Native / Expo since May 2026, in production since October 2026. Core
-  strengths: modular app architecture, native integrations and release engineering. At Preglife I co-designed
+  Senior iOS Engineer with 14 years on Apple platforms (Objective-C, Swift since its 2014 release, SwiftUI);
+  building with React Native / Expo since May 2026, in production since October 2026. Core strengths:
+  modular app architecture, native integrations and release engineering. At Preglife I co-designed
   the modular architecture of two native apps and now co-build their React Native successor, owning the
   native-to-RN data migration (100k+ users) and the native layer in Swift and Kotlin.
 
@@ -46,8 +46,8 @@ experience:
   - role: Senior Mobile Engineer
     company: Preglife
     url: https://apps.apple.com/app/id390427747
-    tagline: "App for expectant and new parents, 11 markets · 4.9/5 on the App Store (29k ratings)"
-    location: Katowice, Poland
+    tagline: "Swedish app for expectant and new parents, 11 markets · 4.9/5 on the App Store (29k ratings)"
+    location: remote from Katowice, Poland
     start: May 2022
     end: present
     phases:
@@ -61,7 +61,7 @@ experience:
         bullets:
           - "Designed and built the migration of native-app data into the on-device SQLite database (local-first) for signed-in and guest users: 100k+ users migrated automatically through an ordinary app update since the October 2026 launch."
           - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance)."
-          - "Own the offers-and-ads module and the account-sharing feature (one account for both parents); built the Tools, Wellness and Checklist modules end to end, from the SQLite data layer to analytics events."
+          - "Own the offers-and-ads module and the account-sharing feature (one account for both parents); built three feature modules end to end, from the SQLite data layer to analytics events."
           - "Set up Maestro E2E tests in GitHub Actions: screen recording and analytics-event report per run; flows written with an AI coding agent against lint-enforced rules."
           - "Automated AASA/assetlinks generation from the app config; added an encrypted shared .env (sops, age)."
       - title: Native iOS
@@ -73,7 +73,7 @@ experience:
           - "Set up and ran the release process for both apps (2–6 releases a month: fastlane and GitHub Actions to TestFlight and the App Store, fastlane match, lint and tests on every PR); led code review for the iOS team and owned its tooling, including a Sourcery generator that scaffolds a new feature module."
           - "Authored the SwiftUI component library (separate repo: 34 server-driven UI components, Playbook catalogue app, snapshot tests) that renders GraphQL-described screens in the UIKit apps."
           - "Built the Onboarding, Offers and Sleep Sounds modules (audio engine, background playback timers), the WidgetKit home-screen widgets and the theming system (colours, typography and spacing defined in one place, so visual refreshes need no changes to feature code)."
-          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel (native ads), RevenueCat, Contentful, If Insurance (Finland), Tryg (Denmark), and MitID (identity verification)."
+          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel (native ads), RevenueCat, Contentful, If Insurance (Finland), Tryg (Denmark) and MitID (identity verification)."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
