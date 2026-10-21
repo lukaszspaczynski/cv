@@ -60,7 +60,7 @@ h2 {
 /* ---------- skills: one line per group ---------- */
 .skill {
   display: grid;
-  grid-template-columns: 36mm 1fr;
+  grid-template-columns: 32mm 1fr;
   column-gap: 4mm;
   margin-bottom: 1.6mm;
   font-size: 9.6pt;

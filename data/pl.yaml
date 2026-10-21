@@ -39,7 +39,7 @@ skills:
   - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "Android (Kotlin, widgety Glance)"]
   - group: Proces i jakość
-    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
+    items: ["testy jednostkowe / snapshotowe / E2E", "CI/CD i wydania (fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
   - group: Narzędzia AI
     items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -57,14 +57,16 @@ experience:
         end: obecnie
         note: "Nowa aplikacja na iOS i Androida, następca obu aplikacji natywnych; zespół pięcioosobowy"
         links:
+          - label: App Store
+            url: https://apps.apple.com/pl/app/id390427747
           - label: Google Play
             url: https://play.google.com/store/apps/details?id=com.gravid.gravid
         bullets:
           - "Zaprojektowałem i zrealizowałem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników zalogowanych i gości: ponad 100 tys. użytkowników zmigrowanych automatycznie przy zwykłej aktualizacji od premiery w październiku 2026."
           - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Androida (Glance)."
-          - "Odpowiadam za moduł ofert i reklam oraz funkcję współdzielenia konta (jedno konto dla obojga rodziców); zbudowałem też trzy moduły funkcjonalne od warstwy danych SQLite po zdarzenia analityczne."
-          - "Uruchomiłem testy E2E w Maestro w GitHub Actions: nagranie i raport zdarzeń analitycznych z każdego przebiegu; scenariusze pisane z agentem AI według reguł wymuszanych linterem."
-          - "Zautomatyzowałem AASA/assetlinks z konfiguracji; dodałem wspólny zaszyfrowany .env (sops, age)."
+          - "Odpowiadam za moduł ofert i reklam oraz funkcję współdzielenia konta (jedno konto dla obojga rodziców); zbudowałem też trzy moduły funkcjonalne w TypeScripcie: ekrany React Native, hooki TanStack Query, warstwa danych SQLite i zdarzenia analityczne."
+          - "Uruchomiłem testy E2E w Maestro w GitHub Actions: nagranie ekranu i raport zdarzeń analitycznych z każdego przebiegu; scenariusze pisane z agentem AI według reguł wymuszanych linterem."
+          - "Zautomatyzowałem generowanie AASA/assetlinks z konfiguracji; dodałem zaszyfrowany .env (sops, age)."
       - title: Natywny iOS
         start: maj 2022
         end: obecnie
@@ -85,9 +87,9 @@ experience:
     end: kwi. 2022
     bullets:
       - "Odpowiadałem za reklamy i odtwarzanie wideo w aplikacji iOS DAZN: AVPlayer, HLS live i VOD, DRM FairPlay, SSAI (Google DAI), Chromecast i AirPlay; zespół cross-platform (iOS, Android, web) w Scrumie."
-      - "Wdrożyłem Key Moments dla transmisji na żywo: zdarzenia meczu (gol, faul) odbierane przez socket i pokazywane jako nakładka na odtwarzaczu, z przewinięciem do danego momentu jednym dotknięciem."
+      - "Wdrożyłem Key Moments dla transmisji na żywo: zdarzenia meczu (gole, faule) odbierane przez socket i pokazywane jako nakładka na odtwarzaczu, z przewinięciem do danego momentu jednym dotknięciem."
       - "Zbudowałem zestawy testów odtwarzania i reklam (jednostkowe, snapshotowe, integracyjne, akceptacyjne w Gherkinie) i utrzymywałem pipeline CI w Jenkinsie."
-      - "Uczestniczyłem w rekrutacji inżynierów iOS: oceniałem zadania i prowadziłem rozmowy techniczne."
+      - "Uczestniczyłem w rekrutacji iOS: oceniałem zadania rekrutacyjne i prowadziłem rozmowy techniczne."
 
   - role: Flutter Developer (zlecenie dodatkowe)
     company: Coolomat
@@ -96,7 +98,7 @@ experience:
     start: sty. 2022
     end: mar. 2022
     bullets:
-      - "Napisałem aplikację Pick-Up dla chłodzonych skrytek paczkowych (Flutter, iOS i Android; wiodący programista dwuosobowego zespołu): API rezerwacji, zamówienia QR, otwieranie skrytek po kontroli GPS."
+      - "Napisałem od zera aplikację Pick-Up dla chłodniczych skrytek paczkowych (Flutter, iOS i Android; lead developer w 2-osobowym zespole): API rezerwacji i zamówień QR, otwieranie skrytek z weryfikacją GPS."
 
   - role: Senior Software Developer (iOS)
     company: EUVIC
