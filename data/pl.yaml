@@ -15,7 +15,7 @@ labels:
 person:
   name: Łukasz Spaczyński
   photo: ../assets/photo.jpg
-  headline: Senior iOS / Mobile Engineer · Swift, SwiftUI · React Native
+  headline: Senior iOS / Mobile Engineer · Swift · React Native
   email: lukasz.spaczynski@gmail.com
   phone: "+48 506 180 356"
   location: Katowice
@@ -23,20 +23,23 @@ person:
   links:
     - label: linkedin.com/in/lukaszspaczynski
       url: https://www.linkedin.com/in/lukaszspaczynski/
+    - label: github.com/lukaszspaczynski
+      url: https://github.com/lukaszspaczynski
 
 summary: >-
-  Inżynier iOS z 14-letnim doświadczeniem na platformach Apple: Objective-C, Swift od 2014, SwiftUI;
-  od 2026 także React Native / Expo. Najmocniejszy w modułowej architekturze, integracjach natywnych
-  i procesie wydań. W Preglife współprojektowałem architekturę dwóch natywnych aplikacji, a teraz
-  współtworzę ich następcę w React Native: migrację danych i warstwę natywną w Swifcie i Kotlinie.
+  Senior iOS Engineer z 14-letnim doświadczeniem na platformach Apple: Objective-C, Swift od 2014,
+  SwiftUI; od maja 2026 produkcyjnie także React Native / Expo. Najmocniejszy w modułowej architekturze,
+  integracjach natywnych i procesie wydań. W Preglife współprojektowałem architekturę dwóch natywnych
+  aplikacji, a teraz współtworzę ich następcę w React Native, odpowiadając za migrację danych (ponad
+  100 tys. użytkowników od premiery w październiku 2026) i warstwę natywną w Swifcie i Kotlinie.
 
 skills:
   - group: iOS
-    items: ["Swift (od 2014)", "SwiftUI", "UIKit", "Objective-C", "Swift Concurrency", "Combine", "SPM i architektura modułowa", "Coordinator / MVVM", "dependency injection", "Core Data", "WidgetKit", "push i deep linking", "StoreKit / RevenueCat"]
-  - group: Wieloplatformowe
-    items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "CRM i atrybucja (Braze, AppsFlyer)"]
+    items: ["Swift", "SwiftUI", "UIKit", "Objective-C", "Swift Concurrency", "Combine", "SPM i architektura modułowa", "Coordinator / MVVM", "dependency injection", "Core Data", "WidgetKit", "powiadomienia push i deep linking", "StoreKit / RevenueCat", "lokalizacja (11 rynków)"]
+  - group: Cross-platform
+    items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "Android (Kotlin, widgety Glance)"]
   - group: Proces i jakość
-    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Crashlytics)"]
+    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "code review", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
   - group: Narzędzia AI
     items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -49,27 +52,28 @@ experience:
     start: maj 2022
     end: obecnie
     phases:
-      - title: iOS natywne
-        start: maj 2022
-        end: obecnie
-        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób; w utrzymaniu do czasu pełnej migracji użytkowników."
-        bullets:
-          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem od zera, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, server-driven UI (komponenty opisane w GraphQL renderowane natywnie) i obsługę deep linków."
-          - "Założyłem bibliotekę komponentów SwiftUI (osobne repozytorium: 34 widgety, katalog Playbook, testy snapshotowe) i zintegrowałem ją z aplikacjami opartymi na UIKit, gdzie renderuje ekrany server-driven."
-          - "Zbudowałem m.in. moduły Onboarding, Offers i Sleep Sounds (silnik audio, timery odtwarzania w tle) oraz widgety ekranu głównego (WidgetKit)."
-          - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
-          - "Prowadziłem integracje zewnętrzne i partnerskie: Braze, AppsFlyer, Kevel (reklamy natywne), RevenueCat, Contentful, ubezpieczyciele If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
-          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie): Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez fastlane match, lint i testy w każdym PR."
-          - "Prowadziłem code review w zespole iOS i rozwijałem jego narzędzia: pipeline'y CI, generator Sourcery tworzący szkielet nowego modułu funkcji oraz testy nowych narzędzi przyspieszających codzienną pracę."
-      - title: Preglife · React Native / Expo
+      - title: React Native / Expo
         start: maj 2026
         end: obecnie
-        note: "Nowa aplikacja na iOS i Android, wydana w październiku 2026 jako następca obu aplikacji natywnych; zespół pięcioosobowy."
+        note: "Nowa aplikacja na iOS i Android, następca obu aplikacji natywnych; zespół pięcioosobowy"
+        links:
+          - label: Google Play
+            url: https://play.google.com/store/apps/details?id=com.gravid.gravid
         bullets:
+          - "Zaprojektowałem i zrealizowałem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników z kontem i bez: od premiery w październiku 2026 zmigrowano dane ponad 100 tys. użytkowników, automatycznie przy zwykłej aktualizacji."
           - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance)."
           - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta (jedno konto dla obojga rodziców); zbudowałem też moduły Tools, Wellness i Checklist, od warstwy danych po analitykę."
-          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników z kontem i bez, uruchamianą automatycznie przy zwykłej aktualizacji; od premiery w październiku 2026 zmigrowało ponad 100 tys. użytkowników."
-          - "Zbudowałem narzędzia automatyzujące pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (scenariusze pisane z agentem AI według reguł z lintera), uruchamiane w GitHub Actions z nagraniem ekranu i raportem analityki."
+          - "Zautomatyzowałem pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (scenariusze pisane z agentem AI według reguł wymuszanych linterem), uruchamiane w GitHub Actions z nagraniem i raportem zdarzeń analitycznych."
+      - title: Natywny iOS
+        start: maj 2022
+        end: obecnie
+        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób; od premiery w październiku 2026 tylko utrzymanie."
+        bullets:
+          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem od zera, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka oraz obsługę deep linków."
+          - "Stworzyłem bibliotekę komponentów SwiftUI (osobne repo: 34 widgety, aplikacja-katalog Playbook, testy snapshotowe), która renderuje server-driven UI (ekrany opisane w GraphQL) w aplikacjach UIKit."
+          - "Zbudowałem moduły Onboarding, Offers i Sleep Sounds (silnik audio, timery odtwarzania w tle), widgety ekranu głównego (WidgetKit) oraz system motywów: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
+          - "Odpowiadałem za integracje zewnętrzne i partnerskie: Braze, AppsFlyer, Kevel (reklamy natywne), RevenueCat, Contentful, ubezpieczyciele If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
+          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie: Fastlane i GitHub Actions do TestFlight i App Store, fastlane match, lint i testy w każdym PR); prowadziłem code review w zespole iOS i rozwijałem jego narzędzia, m.in. generator Sourcery tworzący szkielet nowego modułu."
 
   - role: Flutter Developer (zlecenie dodatkowe)
     company: Coolomat
@@ -78,18 +82,19 @@ experience:
     start: sty. 2022
     end: mar. 2022
     bullets:
-      - "Postawiłem aplikację Pick-Up dla automatów paczkowych Coolomat (Flutter; główny programista w dwuosobowym zespole): architektura, API rezerwacji, zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS, push Firebase."
+      - "Zbudowałem od zera aplikację Pick-Up dla automatów paczkowych (Flutter; lider dwuosobowego zespołu): API rezerwacji, zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS, push Firebase."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
-    tagline: "Globalna platforma streamingu sportu na żywo · aplikacja iOS w Swift, RxSwift (FRP), MVVM z warstwą serwisów"
+    tagline: "Globalna platforma streamingu sportu na żywo · aplikacja iOS w Swifcie z RxSwift, MVVM z warstwą serwisów"
     location: Katowice
     start: kwi. 2020
     end: kwi. 2022
     bullets:
-      - "Odpowiadałem za reklamy i odtwarzanie wideo w iOS DAZN w zespole cross-platform iOS/Android/web."
-      - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) oraz wspierałem QA w automatyzacji testów; utrzymywałem buildy w CI (Jenkins)."
-      - "Brałem udział w rekrutacji inżynierów iOS: ocena zadań kandydatów i prowadzenie rozmów technicznych."
+      - "Odpowiadałem za reklamy i odtwarzanie wideo w aplikacji iOS DAZN (AVPlayer, HLS na żywo i VOD, DRM FairPlay, reklamy server-side (DAI), Chromecast, AirPlay) w zespole cross-platform (iOS, Android, web)."
+      - "Dowiozłem Key Moments dla transmisji na żywo: zdarzenia meczu (gol, faul) odbierane przez socket i pokazywane jako nakładka na playerze, z przewinięciem do danego momentu jednym dotknięciem."
+      - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin); CI w Jenkinsie."
+      - "Brałem udział w rekrutacji inżynierów iOS: oceniałem zadania i prowadziłem rozmowy techniczne."
 
   - role: Senior Software Developer
     company: EUVIC

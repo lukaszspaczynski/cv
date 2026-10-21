@@ -28,7 +28,7 @@
 <section class="skills">
   <h2>{{ labels.skills }}</h2>
   {% for s in skills %}
-  <p class="skill"><span class="skill__group">{{ s.group }}</span>{{ s["items"] | join(" · ") }}</p>
+  <p class="skill"><span class="skill__group">{{ s.group }}</span>{{ s["items"] | join("\u00a0· ") }}</p>
   {% endfor %}
 </section>
 
@@ -60,7 +60,7 @@
       <div class="phase__head">
         <span class="phase__title">{{ ph.title }}</span>
         <span class="phase__meta">· {{ ph.start }} – {{ ph.end }}</span>
-        {% if ph.get("note") %}<div class="job__tagline">{{ ph.note }}</div>{% endif %}
+        {% if ph.get("note") %}<div class="job__tagline">{{ ph.note }}{% for l in ph.get("links", []) %} · <a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</div>{% endif %}
       </div>
       <ul class="bullets">
         {% for b in ph.bullets %}<li>{{ b }}</li>{% endfor %}
