@@ -38,14 +38,14 @@ skills:
   - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST", "native Expo modules (Swift, Kotlin)", "Android (Kotlin, Glance widgets)"]
   - group: Process & quality
-    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)"]
+    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD (fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase Crashlytics)"]
   - group: AI tooling
     items: ["Claude Code", "agent rules (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
 experience:
   - role: Senior Mobile Engineer
     company: Preglife
-    url: https://apps.apple.com/app/id390427747
+    url: https://www.preglife.com
     tagline: "Swedish app for expectant and new parents, 11 markets · 4.9/5 on the App Store (29k ratings)"
     location: remote from Katowice, Poland
     start: May 2022
@@ -71,7 +71,7 @@ experience:
         end: present
         note: "Two native apps (international and Norwegian): UIKit, SwiftUI, Combine; team of 2–4 · maintenance since Oct 2026"
         bullets:
-          - "Co-designed and maintained the modular architecture: ~70 Swift packages in a shared codebase, 26 of which I created, including the networking and API layer (REST, GraphQL with Apollo), the user, pregnancy and baby domain models and deep linking."
+          - "Co-designed and maintained the modular architecture: ~70 Swift packages in a shared codebase, 26 of which I created, including the networking and API layer (REST, GraphQL with Apollo), the user / pregnancy / baby domain models, and deep linking."
           - "Set up and ran the release process for both apps (2–6 releases a month: fastlane and GitHub Actions to TestFlight and the App Store, fastlane match, lint and tests on every PR); led code review for the iOS team and owned its tooling, including a Sourcery generator that scaffolds a new feature module."
           - "Authored the SwiftUI component library (separate repo: 34 server-driven UI components, Playbook catalogue app, snapshot tests) that renders GraphQL-described screens in the UIKit apps."
           - "Built the Onboarding, Offers and Sleep Sounds modules (audio engine, background playback timers), the WidgetKit home-screen widgets and the theming system (colours, typography and spacing defined in one place, so visual refreshes need no changes to feature code)."
@@ -85,7 +85,7 @@ experience:
     start: Apr 2020
     end: Apr 2022
     bullets:
-      - "Owned ads and video playback in the DAZN iOS app: AVPlayer, HLS live/VOD, FairPlay DRM, server-side ad insertion (Google DAI), Chromecast, AirPlay; cross-platform Scrum team (iOS, Android, web)."
+      - "Owned the iOS side of ads and video playback in a cross-platform Scrum team (iOS, Android, web): AVPlayer, HLS live/VOD, FairPlay DRM, server-side ad insertion (Google DAI), Chromecast, AirPlay."
       - "Delivered Key Moments for live streams: match events (goals, fouls) received over a socket and shown as an overlay on the player, with one-tap seek to the moment."
       - "Built the playback and ads test suites (unit, snapshot, integration, Gherkin) and maintained Jenkins CI."
       - "Took part in hiring iOS engineers: reviewed take-home assignments and conducted technical interviews."
