@@ -85,9 +85,9 @@ experience:
     start: Apr 2020
     end: Apr 2022
     bullets:
-      - "Owned ads and video playback in the DAZN iOS app: AVPlayer, HLS live and VOD, FairPlay DRM, server-side ad insertion with Google DAI, Chromecast and AirPlay; cross-platform Scrum team (iOS, Android, web)."
+      - "Owned ads and video playback in the DAZN iOS app: AVPlayer, HLS live/VOD, FairPlay DRM, server-side ad insertion (Google DAI), Chromecast, AirPlay; cross-platform Scrum team (iOS, Android, web)."
       - "Delivered Key Moments for live streams: match events (goals, fouls) received over a socket and shown as an overlay on the player, with one-tap seek to the moment."
-      - "Built the playback and ads test suites (unit, snapshot, integration, Gherkin acceptance) and maintained Jenkins CI."
+      - "Built the playback and ads test suites (unit, snapshot, integration, Gherkin) and maintained Jenkins CI."
       - "Took part in hiring iOS engineers: reviewed take-home assignments and conducted technical interviews."
 
   - role: Flutter Developer (side contract)
