@@ -15,7 +15,7 @@ labels:
 person:
   name: Łukasz Spaczyński
   photo: ../assets/photo.jpg
-  headline: Senior iOS Engineer · Swift, SwiftUI · React Native / Expo
+  headline: Senior iOS / Mobile Engineer · Swift, SwiftUI · React Native
   email: lukasz.spaczynski@gmail.com
   phone: "+48 506 180 356"
   location: Katowice
@@ -25,10 +25,10 @@ person:
       url: https://www.linkedin.com/in/lukaszspaczynski/
 
 summary: >-
-  Inżynier iOS od 2012 roku: zaczynałem w Objective-C, w Swifcie piszę od jego premiery w 2014,
-  interfejsy buduję głównie w SwiftUI. Od 2022 współodpowiadam za modułową architekturę dwóch natywnych
-  aplikacji Preglife. Od maja 2026 współtworzę ich następcę w React Native / Expo: funkcje, migrację
-  danych i warstwę natywną w Swifcie i Kotlinie.
+  Inżynier iOS z 14-letnim doświadczeniem na platformach Apple: Objective-C, Swift od 2014, SwiftUI;
+  od 2026 także React Native / Expo. Najmocniejszy w modułowej architekturze, integracjach natywnych
+  i procesie wydań. W Preglife współprojektowałem architekturę dwóch natywnych aplikacji, a teraz
+  współtworzę ich następcę w React Native: migrację danych i warstwę natywną w Swifcie i Kotlinie.
 
 skills:
   - group: iOS
@@ -44,7 +44,7 @@ experience:
   - role: Senior Mobile Engineer
     company: Preglife
     url: https://apps.apple.com/pl/app/id390427747
-    tagline: "Aplikacja dla kobiet w ciąży i rodziców, 11 rynków · 4,9/5 w App Store (29 tys. ocen) · apps.apple.com/app/id390427747"
+    tagline: "Aplikacja dla przyszłych i młodych rodziców, 11 rynków · 4,9/5 w App Store (29 tys. ocen)"
     location: Katowice
     start: maj 2022
     end: obecnie
@@ -52,39 +52,40 @@ experience:
       - title: iOS natywne
         start: maj 2022
         end: obecnie
-        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób; utrzymywane do czasu pełnej migracji użytkowników (poprawki krytyczne)."
+        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób; w utrzymaniu do czasu pełnej migracji użytkowników."
         bullets:
           - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem od zera, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, server-driven UI (komponenty opisane w GraphQL renderowane natywnie) i obsługę deep linków."
-          - "Zbudowałem m.in. moduły Onboarding, Oferty i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgety ekranu głównego."
+          - "Założyłem bibliotekę komponentów SwiftUI (osobne repozytorium: 34 widgety, katalog Playbook, testy snapshotowe) i zintegrowałem ją z aplikacjami opartymi na UIKit, gdzie renderuje ekrany server-driven."
+          - "Zbudowałem m.in. moduły Onboarding, Offers i Sleep Sounds (silnik audio, timery odtwarzania w tle) oraz widgety ekranu głównego (WidgetKit)."
           - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
-          - "Odpowiadałem za integracje zewnętrzne i partnerskie, m.in. z Braze, AppsFlyer, Kevel (reklamy), RevenueCat, Contentful, ubezpieczycielami If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
-          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie): Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie Match, lint i testy w każdym PR."
+          - "Prowadziłem integracje zewnętrzne i partnerskie: Braze, AppsFlyer, Kevel (reklamy natywne), RevenueCat, Contentful, ubezpieczyciele If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
+          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie): Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie kodu przez fastlane match, lint i testy w każdym PR."
+          - "Rozwijałem narzędzia zespołu: pipeline'y CI, generator Sourcery tworzący szkielet nowego modułu funkcji oraz testy nowych narzędzi przyspieszających codzienną pracę."
       - title: Preglife · React Native / Expo
         start: maj 2026
         end: obecnie
         note: "Nowa aplikacja na iOS i Android, wydana w październiku 2026 jako następca obu aplikacji natywnych; zespół pięcioosobowy."
         bullets:
           - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance)."
-          - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta między rodzicami; zbudowałem też moduły Narzędzia, Wellness i Checklista, od warstwy danych po analitykę."
-          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy (SQLite, local-first); użytkownicy, z kontem i bez, przeszli na nową aplikację zwykłą aktualizacją, bez utraty danych."
-          - "Zbudowałem narzędzia automatyzujące pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (flow pisane z agentem wg reguł wymuszanych lintem) z nagraniem i raportem zdarzeń analitycznych w GitHub Actions."
+          - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta (jedno konto dla obojga rodziców); zbudowałem też moduły Tools, Wellness i Checklist, od warstwy danych po analitykę."
+          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy SQLite (local-first) dla użytkowników z kontem i bez, uruchamianą automatycznie przy zwykłej aktualizacji; wdrażana od października 2026."
+          - "Zbudowałem narzędzia automatyzujące pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (scenariusze pisane z agentem AI według reguł z lintera), uruchamiane w GitHub Actions z nagraniem ekranu i raportem zdarzeń analitycznych."
 
   - role: Flutter Developer (zlecenie dodatkowe)
     company: Coolomat
     url: https://coolomat.com
-    tagline: "Chłodzone automaty paczkowe (Słowenia) · aplikacja Pick-Up we Flutterze na iOS i Android · główny programista w dwuosobowym zespole"
     location: zdalnie
-    start: sty 2022
-    end: mar 2022
+    start: sty. 2022
+    end: mar. 2022
     bullets:
-      - "Założyłem projekt i zaprojektowałem architekturę (data / domain / presentation, RxDart, GetX); zbudowałem integrację z API rezerwacji (zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS), push Firebase i tłumaczenia EN/SL."
+      - "Postawiłem aplikację Pick-Up dla automatów paczkowych Coolomat (Flutter; główny programista w dwuosobowym zespole): architektura (RxDart, GetX), API rezerwacji, zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS, push Firebase, tłumaczenia EN/SL."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
     tagline: "Globalna platforma streamingu sportu na żywo · aplikacja iOS w Swift, RxSwift (FRP), MVVM z warstwą serwisów"
     location: Katowice
-    start: kwi 2020
-    end: kwi 2022
+    start: kwi. 2020
+    end: kwi. 2022
     bullets:
       - "W zespole cross-platform (iOS, Android, web) pracującym w Scrumie odpowiadałem za obszar reklam i odtwarzania wideo w aplikacji iOS DAZN."
       - "Pisałem testy jednostkowe, snapshotowe, integracyjne i akceptacyjne (Gherkin) oraz wspierałem QA w automatyzacji testów; utrzymywałem buildy w CI (Jenkins)."
@@ -94,19 +95,19 @@ experience:
     company: EUVIC
     tagline: "Software house · projekty iOS dla różnych klientów"
     location: Gliwice
-    start: sty 2014
-    end: kwi 2020
+    start: sty. 2014
+    end: kwi. 2020
     bullets:
-      - "Payr (norweski fintech): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
+      - "Payr (norweski fintech, zespół anglojęzyczny): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
       - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2), SUBWAY Loss Prevention (obraz z kamer powiązany z transakcjami) i UPTIVO Trainer (fitness z urządzeniami zewnętrznymi)."
 
   - role: iOS Developer
     company: Grupa SPOT, KiooiK
     location: Gliwice / Wrocław
-    start: cze 2012
-    end: gru 2013
+    start: cze. 2012
+    end: gru. 2013
     bullets:
-      - "Napisałem aplikację mHOSP na iPada dla branży med-tech, aplikację z przepisami Dr. Oetker Rezeptideen i grę typu memory na iPada w Objective-C i Cocos2d."
+      - "Napisałem aplikację mHOSP na iPada dla branży med-tech, aplikację z przepisami Dr. Oetker Rezeptideen i grę typu memory na iPada (Cocos2d), wszystko w Objective-C."
 
 ai: []
 
@@ -126,7 +127,7 @@ languages:
   - name: polski
     level: ojczysty
   - name: angielski
-    level: B2, język pracy w Preglife
+    level: B2, język pracy od 2020
 
 consent: >-
-  Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesu rekrutacji zgodnie z RODO (Rozporządzenie (UE) 2016/679).
+  Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesu rekrutacji zgodnie z RODO, tj. rozporządzeniem (UE) 2016/679.
