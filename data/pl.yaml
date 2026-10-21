@@ -26,18 +26,17 @@ person:
 
 summary: >-
   Inżynier iOS od 2012 roku: zaczynałem w Objective-C, w Swifcie piszę od jego premiery w 2014,
-  interfejsy buduję dziś głównie w SwiftUI. Od 2026 rozwijam też następcę aplikacji w React Native / Expo, w produkcji dla
-  11 rynków, w tym moduły natywne w Swifcie i Kotlinie; wcześniej Flutter (2022). Od czterech lat
-  współodpowiadam za architekturę Preglife: dwóch natywnych aplikacji iOS (ok. 70 pakietów Swift) i ich
-  następcy w React Native. Odpowiadam za cały cykl: od architektury po CI/CD i wydania w obu sklepach.
+  interfejsy buduję głównie w SwiftUI. Od 2022 współodpowiadam za modułową architekturę dwóch natywnych
+  aplikacji Preglife. Od maja 2026 współtworzę ich następcę w React Native / Expo: funkcje, migrację
+  danych i warstwę natywną w Swifcie i Kotlinie.
 
 skills:
   - group: iOS
     items: ["Swift (od 2014)", "SwiftUI", "UIKit", "Objective-C", "Swift Concurrency", "Combine", "SPM i architektura modułowa", "Coordinator / MVVM", "dependency injection", "Core Data", "WidgetKit", "push i deep linking", "StoreKit / RevenueCat"]
-  - group: Proces i jakość
-    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Crashlytics)", "CRM i atrybucja (Braze, AppsFlyer)"]
   - group: Wieloplatformowe
-    items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "Flutter / Dart"]
+    items: ["React Native", "Expo", "TypeScript", "TanStack Query", "synchronizacja local-first (SQLite)", "GraphQL / REST", "moduły natywne Expo (Swift, Kotlin)", "CRM i atrybucja (Braze, AppsFlyer)"]
+  - group: Proces i jakość
+    items: ["testy unit / snapshot / E2E (XCTest, Jest, Maestro)", "CI/CD i wydania (Fastlane, GitHub Actions, EAS)", "przeglądy kodu", "analityka i monitoring błędów (Firebase, Crashlytics)"]
   - group: Narzędzia AI
     items: ["Claude Code", "reguły dla agentów (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
 
@@ -45,41 +44,40 @@ experience:
   - role: Senior Mobile Engineer
     company: Preglife
     url: https://apps.apple.com/pl/app/id390427747
-    tagline: "Aplikacja dla kobiet w ciąży i rodziców, 11 rynków · App Store 4,9/5, 29 tys. ocen · apps.apple.com/pl/app/id390427747"
+    tagline: "Aplikacja dla kobiet w ciąży i rodziców, 11 rynków · 4,9/5 w App Store (29 tys. ocen) · apps.apple.com/app/id390427747"
     location: Katowice
     start: maj 2022
     end: obecnie
     phases:
-      - title: React Native / Expo
-        start: maj 2026
-        end: obecnie
-        note: "Nowa aplikacja na iOS i Android, wydana w październiku 2026 w miejsce obu aplikacji natywnych; zespół pięcioosobowy."
-        bullets:
-          - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta; zbudowałem też moduły Narzędzia, Wellness i Checklista, od warstwy danych po analitykę."
-          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy (SQLite, local-first), dla kont i danych bez konta; użytkownicy przeszli na nią zwykłą aktualizacją, bez utraty danych."
-          - "Zautomatyzowałem narzędzia zespołu: generatory AASA i assetlinks z konfiguracji aplikacji zamiast ręcznej listy, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro z nagraniem i raportem analityki z każdego przebiegu w GitHub Actions."
-          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: mostek Braze (odroczona inicjalizacja SDK, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance)."
       - title: iOS natywne
         start: maj 2022
-        end: maj 2026
-        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; 11 rynków, zespół 2–4 osoby."
+        end: obecnie
+        note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine, Core Data; zespół 2–4 osób; utrzymywane do czasu pełnej migracji użytkowników (poprawki krytyczne)."
         bullets:
-          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift na wspólnym kodzie, z których 26 założyłem sam, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, mapowanie widgetów z GraphQL na UI i obsługę deep linków (wyraźne granice modułów kosztem czasu pełnego builda)."
-          - "Zrealizowałem moduły Onboarding, Ustawienia, Oferty, Narzędzia, Wyszukiwarka, Statystyki i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgety ekranu głównego."
-          - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie funkcji."
-          - "Odpowiadałem za integracje zewnętrzne i partnerskie, m.in. z Braze, AppsFlyer, reklamami natywnymi Kevel, subskrypcjami RevenueCat, Contentful, ubezpieczycielami If (Finlandia) i Tryg (Dania) oraz weryfikacją tożsamości MitID."
-          - "Postawiłem i prowadziłem proces wydań obu aplikacji (2–6 miesięcznie): Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie Match, a w każdym PR lint oraz testy jednostkowe i snapshotowe."
+          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem od zera, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka, server-driven UI (komponenty opisane w GraphQL renderowane natywnie) i obsługę deep linków."
+          - "Zbudowałem m.in. moduły Onboarding, Oferty i Sleep Sounds (silnik audio, timery w tle, widget) oraz widgety ekranu głównego."
+          - "Zaprojektowałem i wdrożyłem system motywów aplikacji: kolory, czcionki i odstępy zdefiniowane w jednym miejscu, dzięki czemu cykliczne odświeżanie wyglądu nie wymaga zmian w kodzie modułów."
+          - "Odpowiadałem za integracje zewnętrzne i partnerskie, m.in. z Braze, AppsFlyer, Kevel (reklamy), RevenueCat, Contentful, ubezpieczycielami If (Finlandia) i Tryg (Dania) oraz MitID (weryfikacja tożsamości)."
+          - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie): Fastlane i GitHub Actions do TestFlight i App Store, podpisywanie Match, lint i testy w każdym PR."
+      - title: Preglife · React Native / Expo
+        start: maj 2026
+        end: obecnie
+        note: "Nowa aplikacja na iOS i Android, wydana w październiku 2026 jako następca obu aplikacji natywnych; zespół pięcioosobowy."
+        bullets:
+          - "Napisałem natywne moduły Expo w Kotlinie i Swifcie: bridge do SDK Braze (odroczona inicjalizacja, akcje wiadomości in-app) oraz widget ekranu głównego na iOS (WidgetKit) i Android (Glance)."
+          - "Odpowiadam za moduł ofert i reklam oraz współdzielenie konta między rodzicami; zbudowałem też moduły Narzędzia, Wellness i Checklista, od warstwy danych po analitykę."
+          - "Zaprojektowałem i wdrożyłem migrację danych z aplikacji natywnych do lokalnej bazy (SQLite, local-first); użytkownicy, z kontem i bez, przeszli na nową aplikację zwykłą aktualizacją, bez utraty danych."
+          - "Zbudowałem narzędzia automatyzujące pracę zespołu: generatory AASA i assetlinks z konfiguracji aplikacji, współdzielony zaszyfrowany .env (sops, age) oraz testy E2E w Maestro (flow pisane z agentem wg reguł wymuszanych lintem) z nagraniem i raportem zdarzeń analitycznych w GitHub Actions."
 
-  - role: Flutter Developer (zlecenie)
+  - role: Flutter Developer (zlecenie dodatkowe)
     company: Coolomat
     url: https://coolomat.com
-    tagline: "Słoweński producent chłodzonych automatów paczkowych · aplikacja Coolomat Pick-Up na iOS i Android we Flutterze · główny programista w dwuosobowym zespole"
+    tagline: "Chłodzone automaty paczkowe (Słowenia) · aplikacja Pick-Up we Flutterze na iOS i Android · główny programista w dwuosobowym zespole"
     location: zdalnie
     start: sty 2022
     end: mar 2022
     bullets:
-      - "Postawiłem projekt i zaprojektowałem architekturę (warstwy data / domain / presentation, use case'y, RxDart, GetX) oraz integrację z API rezerwacji Coolomat: lista zamówień z kodami QR odbioru, zdalne otwieranie skrytek po sprawdzeniu odległości GPS, weryfikacja numeru telefonu."
-      - "Zintegrowałem powiadomienia push (Firebase) z rejestracją tokenu, obsługę zgód i uprawnień w ustawieniach oraz tłumaczenia (EN, SL); przygotowałem ikony i buildy."
+      - "Założyłem projekt i zaprojektowałem architekturę (data / domain / presentation, RxDart, GetX); zbudowałem integrację z API rezerwacji (zamówienia z QR, otwieranie skrytek po sprawdzeniu GPS), push Firebase i tłumaczenia EN/SL."
 
   - role: Senior Software Engineer (iOS)
     company: DAZN Group
@@ -100,10 +98,10 @@ experience:
     end: kwi 2020
     bullets:
       - "Payr (norweski fintech): stworzyłem od podstaw aplikację do zarządzania i opłacania rachunków, z integracjami z serwisami płatniczymi i dostawcami tożsamości."
-      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2) i SUBWAY Loss Prevention (podgląd z kamer powiązany z transakcjami na żywo) oraz UPTIVO Trainer (fitness z urządzeniami peryferyjnymi)."
+      - "Rozwijałem Bosch Drivelog Connect (dane z auta przez Bluetooth / OBD2), SUBWAY Loss Prevention (obraz z kamer powiązany z transakcjami) i UPTIVO Trainer (fitness z urządzeniami zewnętrznymi)."
 
   - role: iOS Developer
-    company: Grupa SPOT · KiooiK
+    company: Grupa SPOT, KiooiK
     location: Gliwice / Wrocław
     start: cze 2012
     end: gru 2013
@@ -114,7 +112,7 @@ ai: []
 
 projects:
   - name: Sterownik ogrzewania podłogowego
-    role: elektronika, projekt hobbystyczny
+    role: elektronika
     description: "Własny sterownik na module ESP-01S (ESP8266) z oprogramowaniem w ESPHome i automatyką w Node-RED."
 
 education:
@@ -131,4 +129,4 @@ languages:
     level: B2, język pracy w Preglife
 
 consent: >-
-  Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb procesu rekrutacji zgodnie z RODO (Rozporządzenie (UE) 2016/679).
+  Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesu rekrutacji zgodnie z RODO (Rozporządzenie (UE) 2016/679).
