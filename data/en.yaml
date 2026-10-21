@@ -14,28 +14,28 @@ labels:
 
 person:
   name: Łukasz Spaczyński
-  headline: Senior iOS Engineer · Swift, SwiftUI · React Native and Flutter
+  headline: Senior iOS Engineer · Swift, SwiftUI · React Native / Expo
   email: lukasz.spaczynski@gmail.com
   phone: "+48 506 180 356"
   location: Katowice, Poland
-  availability: remote (CET) / hybrid · open to EU teams
+  availability: remote (CET) / hybrid · open to EU-based teams
   links:
     - label: linkedin.com/in/lukaszspaczynski
       url: https://www.linkedin.com/in/lukaszspaczynski/
 
 summary: >-
-  iOS engineer with 14 years of Swift and SwiftUI practice; since 2022 I have also been building
-  cross-platform apps: Flutter, and since 2026 React Native / Expo in production for 11 markets, always
-  from the native side (Expo modules in Swift and Kotlin, widgets, SDK integrations). For the last four years
-  I have co-owned the architecture of Preglife's apps: two native iOS applications (~70 Swift packages) and
-  their React Native successor. I work across the full cycle: from architecture to CI/CD and store releases.
+  iOS engineer since 2012: started in Objective-C, writing Swift since its 2014 release, building UI
+  mainly in SwiftUI today. Since 2026 I also build the apps' React Native / Expo successor, in production for 11 markets,
+  including native modules in Swift and Kotlin; earlier Flutter (2022). For the last four years I have
+  co-owned the architecture of Preglife's apps: two native iOS applications (~70 Swift packages) and their
+  React Native successor. I own the full cycle: from architecture to CI/CD and releases on both stores.
 
 skills:
   - group: iOS
     items: ["Swift (since 2014)", "SwiftUI", "UIKit", "Objective-C", "Swift Concurrency", "Combine", "SPM & modular architecture", "Coordinator / MVVM", "dependency injection", "Core Data", "WidgetKit", "push notifications & deep linking", "StoreKit / RevenueCat"]
-  - group: Engineering
-    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (Fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)", "messaging & attribution (Braze, AppsFlyer)"]
-  - group: Multiplatform
+  - group: Process & quality
+    items: ["unit / snapshot / E2E testing (XCTest, Jest, Maestro)", "CI/CD & release management (Fastlane, GitHub Actions, EAS)", "code review", "analytics & crash monitoring (Firebase, Crashlytics)", "CRM & attribution (Braze, AppsFlyer)"]
+  - group: Cross-platform
     items: ["React Native", "Expo", "TypeScript", "TanStack Query", "local-first sync (SQLite)", "GraphQL / REST", "native Expo modules (Swift, Kotlin)", "Flutter / Dart"]
   - group: AI tooling
     items: ["Claude Code", "agent rules (CLAUDE.md)", "MCP (Jira, Confluence, Figma)"]
@@ -54,22 +54,22 @@ experience:
         end: present
         note: "New iOS and Android app released in October 2026 in place of both native apps; team of five."
         bullets:
-          - "Own the offers and ads module, account sharing and the import of data from the native apps; also built the Tools, Wellness and Checklist modules, from the data layer through to analytics."
-          - "Built the data import path from the native apps (accounts and local-only data), which let existing users move to the new app through a regular update, without data loss."
-          - "Built the team's tooling: AASA and assetlinks generators derived from the app config and deep-link classifier instead of a hand-kept list, a shared encrypted .env (sops, age) with a pre-commit hook, and Maestro E2E tests on Android with a recording and analytics report per run, in GitHub Actions."
-          - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation with no lost session-start events, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance); push deep links work including on cold start."
+          - "Own the offers and ads module and account sharing; also built the Tools, Wellness and Checklist modules, from the data layer through to analytics."
+          - "Designed and built the data migration from the native apps into the local database (SQLite, local-first), for accounts and local-only data; users moved to the new app through a regular update, without data loss."
+          - "Automated the team's tooling: AASA and assetlinks generators built from the app config instead of a hand-maintained list, a shared encrypted .env (sops, age), and Maestro E2E tests with a recording and analytics report per run in GitHub Actions."
+          - "Wrote native Expo modules in Kotlin and Swift: a Braze bridge (deferred SDK initialisation, in-app message actions) and a home-screen widget for iOS (WidgetKit) and Android (Glance)."
       - title: Native iOS
         start: May 2022
         end: May 2026
-        note: "Two native apps (international and Norwegian), UIKit and SwiftUI, 11 markets; iOS team of 2–4."
+        note: "Two native apps (international and Norwegian): UIKit, SwiftUI, Combine, Core Data; 11 markets, team of 2–4."
         bullets:
-          - "Co-designed and maintained the modular architecture: ~70 Swift packages on a shared codebase, 26 of which I created myself, including the networking and API layer (REST, GraphQL with Apollo), the user, pregnancy and baby domain models, the Braze service, mapping of GraphQL widgets to UI and deep-link handling. A deliberate trade-off: clear module boundaries at the cost of full-build time."
-          - "Built the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
+          - "Co-designed and maintained the modular architecture: ~70 Swift packages on a shared codebase, 26 of which I created myself, including the networking and API layer (REST, GraphQL with Apollo), the user, pregnancy and baby domain models, mapping of GraphQL widgets to UI and deep-link handling (clear module boundaries at the cost of full-build time)."
+          - "Delivered the Onboarding, Settings, Offers, Tools, Search, Statistics and Sleep Sounds modules (audio engine, background timers, widget) and the home-screen widgets."
           - "Designed and implemented the app's theming system: colours, typography and spacing defined in one place, so periodic visual refreshes need no changes to feature code."
-          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurers If Finland and Tryg Denmark, MitID identity verification."
-          - "Built and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, code signing with Match, lint and format checks on every PR."
+          - "Owned third-party and partner integrations: Braze, AppsFlyer, Kevel native ads, RevenueCat subscriptions, Contentful, Apollo GraphQL, insurers If (Finland) and Tryg (Denmark), and MitID identity verification."
+          - "Set up and ran the release process for both apps (2–6 releases a month): Fastlane and GitHub Actions pipelines to TestFlight and the App Store, Match signing, lint and unit/snapshot tests on every PR."
 
-  - role: Lead Flutter Developer (contract)
+  - role: Flutter Developer (contract)
     company: Coolomat
     url: https://coolomat.com
     tagline: "Slovenian maker of refrigerated parcel lockers · Coolomat Pick-Up app for iOS and Android in Flutter · lead developer in a two-person team"
@@ -77,7 +77,7 @@ experience:
     start: Jan 2022
     end: Mar 2022
     bullets:
-      - "Set up the project and its architecture (data / domain / presentation layers, use cases, RxDart, GetX) and built the integration with Coolomat's reservation API: order list with pick-up QR codes, remote locker opening after a GPS distance check, phone-number verification."
+      - "Bootstrapped the project and designed its architecture (data / domain / presentation layers, use cases, RxDart, GetX) and the integration with Coolomat's reservation API: order list with pick-up QR codes, remote locker opening after a GPS distance check, phone-number verification."
       - "Integrated Firebase push notifications with token registration, consent and permission handling in settings, and EN/SL translations; prepared icons and builds."
 
   - role: Senior Software Engineer (iOS)
@@ -99,7 +99,7 @@ experience:
     end: Apr 2020
     bullets:
       - "Payr (Norwegian fintech startup): built a bill management and payment app from scratch, integrated with payment services and identity providers."
-      - "Developed Bosch Drivelog Connect (car data over Bluetooth / OBD2) and SUBWAY Loss Prevention (live surveillance combined with transactions), and built UPTIVO Trainer from scratch (fitness app syncing connected peripherals)."
+      - "Developed Bosch Drivelog Connect (car data over Bluetooth / OBD2) and SUBWAY Loss Prevention (camera footage matched to live transactions) and UPTIVO Trainer (fitness with peripherals)."
 
   - role: iOS Developer
     company: Grupa SPOT · KiooiK
@@ -107,7 +107,7 @@ experience:
     start: Jun 2012
     end: Dec 2013
     bullets:
-      - "Built the mHOSP iPad app for the med-tech industry from scratch, the Dr. Oetker Rezeptideen recipe app and an iPad memory game in Objective-C and Cocos2d."
+      - "Wrote the mHOSP iPad app for the med-tech industry, the Dr. Oetker Rezeptideen recipe app and an iPad memory game in Objective-C and Cocos2d."
 
 ai: []
 
