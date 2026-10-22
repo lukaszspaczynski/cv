@@ -72,7 +72,7 @@ experience:
         end: obecnie
         note: "Dwie aplikacje natywne (międzynarodowa i norweska): UIKit, SwiftUI, Combine; zespół 2–4 osób · utrzymanie od paź. 2026"
         bullets:
-          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem, m.in. warstwę sieciową i API (REST, GraphQL z Apollo), modele domenowe użytkownika, ciąży i dziecka oraz obsługę deep linków."
+          - "Współprojektowałem i utrzymywałem modułową architekturę: ok. 70 pakietów Swift we wspólnej bazie kodu, z których 26 założyłem, m.in. warstwę sieciową i API (REST, GraphQL z Apollo, async/await), modele domenowe użytkownika, ciąży i dziecka oraz obsługę deep linków."
           - "Zbudowałem i prowadziłem proces wydań obu aplikacji (2–6 wydań miesięcznie: fastlane i GitHub Actions do TestFlight i App Store, fastlane match, lint i testy w każdym PR); prowadziłem code review w zespole iOS i rozwijałem narzędzia zespołu, m.in. generator Sourcery tworzący szkielet nowego modułu."
           - "Stworzyłem bibliotekę komponentów SwiftUI (osobne repo: 34 komponenty server-driven UI, katalog Playbook, testy snapshotowe), która renderuje ekrany opisane w GraphQL w aplikacjach UIKit."
           - "Zbudowałem moduły Onboarding, Offers i Sleep Sounds (silnik audio, timery odtwarzania w tle), widgety ekranu głównego (WidgetKit) oraz system motywów: kolory, typografia i odstępy zdefiniowane w jednym miejscu, dzięki czemu odświeżanie wyglądu nie wymaga zmian w kodzie modułów."

@@ -71,7 +71,7 @@ experience:
         end: present
         note: "Two native apps (international and Norwegian): UIKit, SwiftUI, Combine; team of 2–4 · maintenance since Oct 2026"
         bullets:
-          - "Co-designed and maintained the modular architecture: ~70 Swift packages in a shared codebase, 26 of which I created, including the networking and API layer (REST, GraphQL with Apollo), the user / pregnancy / baby domain models, and deep linking."
+          - "Co-designed and maintained the modular architecture: ~70 Swift packages in a shared codebase, 26 of which I created, including the networking and API layer (REST, GraphQL with Apollo, async/await), the user / pregnancy / baby domain models, and deep linking."
           - "Set up and ran the release process for both apps (2–6 releases a month: fastlane and GitHub Actions to TestFlight and the App Store, fastlane match, lint and tests on every PR); led code review for the iOS team and owned its tooling, including a Sourcery generator that scaffolds a new feature module."
           - "Authored the SwiftUI component library (separate repo: 34 server-driven UI components, Playbook catalogue app, snapshot tests) that renders GraphQL-described screens in the UIKit apps."
           - "Built the Onboarding, Offers and Sleep Sounds modules (audio engine, background playback timers), the WidgetKit home-screen widgets and the theming system (colours, typography and spacing defined in one place, so visual refreshes need no changes to feature code)."
